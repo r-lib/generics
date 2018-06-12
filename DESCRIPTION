@@ -1,0 +1,14 @@
+Package: modelgenerics
+Version: 0.0.0.9000
+Title: Generic Methods Related to Model Fitting
+Description: In order to reduce potential package dependencies, generic methods are provided for model related verbs (e.g., fit, train, etc.).
+Authors@R: c(
+    person("Max", "Kuhn", , "max@rstudio.com", c("aut", "cre")),
+    person("RStudio", role = "cph"))
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
+URL: https://github.com/topepo/modelgenerics
+BugReports: https://github.com/topepo/modelgenerics/issues
