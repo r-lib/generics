@@ -4,7 +4,7 @@
 #' package dependencies when multiple packages have the same 
 #' method. 
 #' 
-#' @param object,x A objects.
+#' @param object,x An object.
 #' @param ... Additional arguments to pass to other funcitons. 
 #' @examples 
 #' fit

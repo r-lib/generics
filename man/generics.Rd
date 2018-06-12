@@ -19,7 +19,7 @@ learn(x, ...)
 evaluate(x, ...)
 }
 \arguments{
-\item{object, x}{A objects.}
+\item{object, x}{An object.}
 
 \item{...}{Additional arguments to pass to other funcitons.}
 }
