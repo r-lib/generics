@@ -3,6 +3,5 @@
 export(evaluate)
 export(fit)
 export(learn)
-export(object)
 export(train)
 export(varImp)

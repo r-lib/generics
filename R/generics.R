@@ -32,10 +32,5 @@ learn <- function (x, ...)
 
 #' @export
 #' @rdname generics
-object <- function (x, ...)
-  UseMethod("object")
-
-#' @export
-#' @rdname generics
 evaluate <- function (x, ...)
   UseMethod("evaluate")

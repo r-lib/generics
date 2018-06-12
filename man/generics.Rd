@@ -5,7 +5,6 @@
 \alias{varImp}
 \alias{train}
 \alias{learn}
-\alias{object}
 \alias{evaluate}
 \title{Generic Functions Related to Modeling}
 \usage{
@@ -16,8 +15,6 @@ varImp(object, ...)
 train(x, ...)
 
 learn(x, ...)
-
-object(x, ...)
 
 evaluate(x, ...)
 }
