@@ -1,14 +1,15 @@
 #' Generic Functions Related to Modeling
 #'
-#' These are generic functions that can be used to minimize 
-#' package dependencies when multiple packages have the same 
-#' method. 
-#' 
+#' These are generic functions that can be used to minimize
+#' package dependencies when multiple packages have the same
+#' method.
+#'
 #' @param object,x An object.
-#' @param ... Additional arguments to pass to other funcitons. 
-#' @examples 
+#' @param data A data set in a data frame or tibble.
+#' @param ... Additional arguments to pass to other funcitons.
+#' @examples
 #' fit
-#' 
+#'
 #' train
 #' @export
 #' @rdname generics
@@ -34,3 +35,20 @@ learn <- function (x, ...)
 #' @rdname generics
 evaluate <- function (x, ...)
   UseMethod("evaluate")
+
+### generics used by broom
+
+#' @export
+#' @rdname generics
+tidy <- function (x, ...)
+  UseMethod("tidy")
+
+#' @export
+#' @rdname generics
+glance <- function(x, ...)
+  UseMethod("glance")
+
+#' @export
+#' @rdname generics
+augment <- function(x, data = NULL, ...)
+  UseMethod("augment")
