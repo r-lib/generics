@@ -50,5 +50,5 @@ glance <- function(x, ...)
 
 #' @export
 #' @rdname generics
-augment <- function(x, data = NULL, ...)
+augment <- function(x, data, ...)
   UseMethod("augment")
