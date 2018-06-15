@@ -2,7 +2,7 @@
 % Please edit documentation in R/generics.R
 \name{fit}
 \alias{fit}
-\alias{varImp}
+\alias{var_imp}
 \alias{train}
 \alias{learn}
 \alias{evaluate}
@@ -10,7 +10,7 @@
 \usage{
 fit(object, ...)
 
-varImp(object, ...)
+var_imp(object, ...)
 
 train(x, ...)
 
