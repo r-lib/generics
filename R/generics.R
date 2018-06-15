@@ -5,6 +5,7 @@
 #' method.
 #'
 #' @param object,x An object.
+#' @param data A data set in a data frame or tibble.
 #' @param ... Additional arguments to pass to other funcitons.
 #' @examples
 #' fit
@@ -34,3 +35,20 @@ learn <- function (x, ...)
 #' @rdname generics
 evaluate <- function (x, ...)
   UseMethod("evaluate")
+
+### generics used by broom
+
+#' @export
+#' @rdname generics
+tidy <- function (x, ...)
+  UseMethod("tidy")
+
+#' @export
+#' @rdname generics
+glance <- function(x, ...)
+  UseMethod("glance")
+
+#' @export
+#' @rdname generics
+augment <- function(x, data, ...)
+  UseMethod("augment")

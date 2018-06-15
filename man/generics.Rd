@@ -6,6 +6,9 @@
 \alias{train}
 \alias{learn}
 \alias{evaluate}
+\alias{tidy}
+\alias{glance}
+\alias{augment}
 \title{Generic Functions Related to Modeling}
 \usage{
 fit(object, ...)
@@ -17,6 +20,12 @@ train(x, ...)
 learn(x, ...)
 
 evaluate(x, ...)
+
+tidy(x, ...)
+
+glance(x, ...)
+
+augment(x, data = NULL, ...)
 }
 \arguments{
 \item{object, x}{An object.}

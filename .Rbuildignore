@@ -1,1 +1,3 @@
 modelgenerics.Rproj
+^.*\.Rproj$
+^\.Rproj\.user$
