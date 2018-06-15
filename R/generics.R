@@ -4,9 +4,15 @@
 #' package dependencies when multiple packages have the same
 #' method.
 #'
+#' For example, if a new `tidy` method is being developed for a package, this
+#'  lightweight package can be the required dependency to have access to the
+#'  generic method (instead of depending on `broom` and installing its
+#'  dependencies).
+#'
 #' @param object,x An object.
 #' @param data A data set in a data frame or tibble.
-#' @param ... Additional arguments to pass to other funcitons.
+#' @param tree A fitted model object.
+#' @param ... Additional arguments to pass to other functions.
 #' @examples
 #' fit
 #'
@@ -36,6 +42,11 @@ learn <- function (x, ...)
 evaluate <- function (x, ...)
   UseMethod("evaluate")
 
+#' @export
+#' @rdname generics
+prune <- function (tree, ...)
+  UseMethod("prune")
+
 ### generics used by broom
 
 #' @export
@@ -52,3 +63,5 @@ glance <- function(x, ...)
 #' @rdname generics
 augment <- function(x, data, ...)
   UseMethod("augment")
+
+

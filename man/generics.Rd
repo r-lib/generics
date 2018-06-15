@@ -6,6 +6,7 @@
 \alias{train}
 \alias{learn}
 \alias{evaluate}
+\alias{prune}
 \alias{tidy}
 \alias{glance}
 \alias{augment}
@@ -21,21 +22,33 @@ learn(x, ...)
 
 evaluate(x, ...)
 
+prune(tree, ...)
+
 tidy(x, ...)
 
 glance(x, ...)
 
-augment(x, data = NULL, ...)
+augment(x, data, ...)
 }
 \arguments{
 \item{object, x}{An object.}
 
-\item{...}{Additional arguments to pass to other funcitons.}
+\item{...}{Additional arguments to pass to other functions.}
+
+\item{tree}{A fitted model object.}
+
+\item{data}{A data set in a data frame or tibble.}
 }
 \description{
 These are generic functions that can be used to minimize
 package dependencies when multiple packages have the same
 method.
+}
+\details{
+For example, if a new \code{tidy} method is being developed for a package, this
+lightweight package can be the required dependency to have access to the
+generic method (instead of depending on \code{broom} and installing its
+dependencies).
 }
 \examples{
 fit
