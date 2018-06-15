@@ -18,8 +18,8 @@ fit <- function (object, ...)
 
 #' @export
 #' @rdname generics
-varImp <- function (object, ...)
-  UseMethod("varImp")
+var_imp <- function (object, ...)
+  UseMethod("var_imp")
 
 #' @export
 #' @rdname generics
