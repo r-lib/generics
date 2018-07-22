@@ -19,7 +19,7 @@
 #'  dependencies).
 #'  
 #' In this package, snake case is preferred. The generics `varimp` and `varImp`
-#'  are provided to maintain compatability with existing pacakges (e.g. `party` 
+#'  are provided to maintain compatibility with existing packages (e.g. `party` 
 #'  and `caret`). Both refer to the `var_imp` 
 #'  
 #' Known non-S4 functions related to modeling (which may or may not be 
