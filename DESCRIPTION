@@ -10,5 +10,5 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
-URL: https://github.com/topepo/modelgenerics
-BugReports: https://github.com/topepo/modelgenerics/issues
+URL: https://github.com/tidymodels/modelgenerics
+BugReports: https://github.com/tidymodels/modelgenerics/issues

@@ -75,7 +75,7 @@ generic method (instead of depending on \pkg{broom} and installing its
 dependencies).
 
 In this package, snake case is preferred. The generics \code{varimp} and \code{varImp}
-are provided to maintain compatability with existing pacakges (e.g. \code{party}
+are provided to maintain compatibility with existing packages (e.g. \code{party}
 and \code{caret}). Both refer to the \code{var_imp}
 
 Known non-S4 functions related to modeling (which may or may not be
@@ -104,6 +104,6 @@ consistent with the definitions in this package):
 \examples{
 fit
 
-train
+tidy
 
 }
