@@ -1,5 +1,5 @@
 Package: modelgenerics
-Version: 0.0.0.9000
+Version: 0.0.1
 Title: Generic Methods Related to Model Fitting
 Description: In order to reduce potential package dependencies, generic methods are provided for model related verbs (e.g., fit, train, etc.).
 Authors@R: c(
