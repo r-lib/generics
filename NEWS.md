@@ -1,7 +1,5 @@
-# `modelgenerics`
+# `modelgenerics` 0.0.1
 
-Version `0.0.0.9000`
-
-* Initial development version.
+First CRAN version
 
 
