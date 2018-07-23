@@ -107,7 +107,6 @@ prune <- function (tree, ...)
 refit <- function (object, ...)
   UseMethod("refit")
 
-
 #' @export
 #' @rdname generics
 tidy <- function (x, ...)
