@@ -16,7 +16,7 @@
 \alias{var_imp}
 \alias{varimp}
 \alias{varImp}
-\title{Generic Functions Related to Modeling}
+\title{Generic functions related to modeling}
 \usage{
 augment(x, data, ...)
 
@@ -83,7 +83,6 @@ and \code{caret}). Both refer to the \code{var_imp}
 
 Known non-S4 functions related to modeling (which may or may not be
 consistent with the definitions in this package):
-
 \itemize{
 \item \code{augment}: \pkg{broom}
 \item \code{compile}: \pkg{keras}, \pkg{tensorflow}
@@ -101,7 +100,7 @@ consistent with the definitions in this package):
 \pkg{permutations}, and others.
 \item \code{train}: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
 \pkg{Information}, and others.
-\item \code{varImp}: \pkg{caret}, {datafsm}
+\item \code{varImp}: \pkg{caret}, \pkg{datafsm}
 \item \code{varimp}: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
 \item \code{var_imp}: \pkg{datafsm}
 }

@@ -1,4 +1,4 @@
-#' Generic Functions Related to Modeling
+#' Generic functions related to modeling
 #'
 #' These are generic functions that can be used to minimize
 #' package dependencies when multiple packages have the same
@@ -25,27 +25,25 @@
 #' Known non-S4 functions related to modeling (which may or may not be 
 #' consistent with the definitions in this package):
 #' 
-#' \itemize{
-#' \item `augment`: \pkg{broom}
-#' \item `compile`: \pkg{keras}, \pkg{tensorflow}
-#' \item `estfun`: \pkg{sandwich}, \pkg{ssym}, \pkg{gmm}, \pkg{maxLik}, 
+#' * `augment`: \pkg{broom}
+#' * `compile`: \pkg{keras}, \pkg{tensorflow}
+#' * `estfun`: \pkg{sandwich}, \pkg{ssym}, \pkg{gmm}, \pkg{maxLik}, 
 #'   \pkg{psychotools}, \pkg{drc}, and others
-#' \item `evaluate`: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
-#' \item `explain`: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
-#' \item `fit`: \pkg{keras}
-#' \item `glance`: \pkg{broom}
-#' \item `learn`: \pkg{grnn}, \pkg{pnn}
-#' \item `prune`: \pkg{rpart}, \pkg{dendextend}
-#' \item `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit}, 
+#' * `evaluate`: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
+#' * `explain`: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
+#' * `fit`: \pkg{keras}
+#' * `glance`: \pkg{broom}
+#' * `learn`: \pkg{grnn}, \pkg{pnn}
+#' * `prune`: \pkg{rpart}, \pkg{dendextend}
+#' * `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit}, 
 #'  \pkg{glogis}, \pkg{fxregime}, and others. 
-#' \item `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data}, 
+#' * `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data}, 
 #'  \pkg{permutations}, and others. 
-#' \item `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
+#' * `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
 #'  \pkg{Information}, and others. 
-#' \item `varImp`: \pkg{caret}, {datafsm}
-#' \item `varimp`: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
-#' \item `var_imp`: \pkg{datafsm}
-#' }
+#' * `varImp`: \pkg{caret}, \pkg{datafsm}
+#' * `varimp`: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
+#' * `var_imp`: \pkg{datafsm}
 #'
 #' @param object,x An object. See Details below. 
 #' @param data A data set in a data frame or tibble.
@@ -59,75 +57,90 @@
 
 #' @export
 #' @rdname generics
-augment <- function(x, data, ...)
+augment <- function(x, data, ...) {
   UseMethod("augment")
+}
 
 #' @export
 #' @rdname generics
-compile <- function (object, ...)
+compile <- function (object, ...) {
   UseMethod("compile")
+}
 
 #' @export
 #' @rdname generics
-estfun <- function (x, ...)
+estfun <- function (x, ...) {
   UseMethod("estfun")
+}
 
 #' @export
 #' @rdname generics
-evaluate <- function (x, ...)
+evaluate <- function (x, ...) {
   UseMethod("evaluate")
+}
 
 #' @export
 #' @rdname generics
-explain <- function (x, ...)
+explain <- function (x, ...) {
   UseMethod("explain")
+}
 
 #' @export
 #' @rdname generics
-fit <- function (object, ...)
+fit <- function (object, ...) {
   UseMethod("fit")
+}
 
 #' @export
 #' @rdname generics
-glance <- function(x, ...)
+glance <- function(x, ...) {
   UseMethod("glance")
+}
 
 #' @export
 #' @rdname generics
-learn <- function (x, ...)
+learn <- function (x, ...) {
   UseMethod("learn")
+}
 
 #' @export
 #' @rdname generics
-prune <- function (tree, ...)
+prune <- function (tree, ...) {
   UseMethod("prune")
+}
 
 #' @export
 #' @rdname generics
-refit <- function (object, ...)
+refit <- function (object, ...) {
   UseMethod("refit")
+}
 
 #' @export
 #' @rdname generics
-tidy <- function (x, ...)
+tidy <- function (x, ...) {
   UseMethod("tidy")
+}
 
 #' @export
 #' @rdname generics
-train <- function (x, ...)
+train <- function (x, ...) {
   UseMethod("train")
+}
 
 #' @export
 #' @rdname generics
-var_imp <- function (object, ...)
+var_imp <- function (object, ...) {
   UseMethod("var_imp")
+}
 
 #' @export
 #' @rdname generics
-varimp <- function (object, ...)
+varimp <- function (object, ...) {
   UseMethod("var_imp")
+}
 
 #' @export
 #' @rdname generics
-varImp <- function (object, ...)
+varImp <- function (object, ...) {
   UseMethod("var_imp")
+}
