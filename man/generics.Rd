@@ -10,6 +10,7 @@
 \alias{glance}
 \alias{learn}
 \alias{prune}
+\alias{refit}
 \alias{tidy}
 \alias{train}
 \alias{var_imp}
@@ -34,6 +35,8 @@ glance(x, ...)
 learn(x, ...)
 
 prune(tree, ...)
+
+refit(object, ...)
 
 tidy(x, ...)
 
@@ -92,6 +95,8 @@ consistent with the definitions in this package):
 \item \code{glance}: \pkg{broom}
 \item \code{learn}: \pkg{grnn}, \pkg{pnn}
 \item \code{prune}: \pkg{rpart}, \pkg{dendextend}
+\item \code{refit}: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit},
+\pkg{glogis}, \pkg{fxregime}, and others.
 \item \code{tidy}: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data},
 \pkg{permutations}, and others.
 \item \code{train}: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},

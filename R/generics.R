@@ -36,6 +36,8 @@
 #' \item `glance`: \pkg{broom}
 #' \item `learn`: \pkg{grnn}, \pkg{pnn}
 #' \item `prune`: \pkg{rpart}, \pkg{dendextend}
+#' \item `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit}, 
+#'  \pkg{glogis}, \pkg{fxregime}, and others. 
 #' \item `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data}, 
 #'  \pkg{permutations}, and others. 
 #' \item `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
@@ -99,6 +101,12 @@ learn <- function (x, ...)
 #' @rdname generics
 prune <- function (tree, ...)
   UseMethod("prune")
+
+#' @export
+#' @rdname generics
+refit <- function (object, ...)
+  UseMethod("refit")
+
 
 #' @export
 #' @rdname generics
