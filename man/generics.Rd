@@ -18,7 +18,7 @@
 \alias{varImp}
 \title{Generic functions related to modeling}
 \usage{
-augment(x, data, ...)
+augment(x, ...)
 
 compile(object, ...)
 
@@ -49,8 +49,6 @@ varimp(object, ...)
 varImp(object, ...)
 }
 \arguments{
-\item{data}{A data set in a data frame or tibble.}
-
 \item{...}{Additional arguments to pass to other functions.}
 
 \item{object, x}{An object. See Details below.}

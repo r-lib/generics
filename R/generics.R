@@ -46,7 +46,6 @@
 #' * `var_imp`: \pkg{datafsm}
 #'
 #' @param object,x An object. See Details below. 
-#' @param data A data set in a data frame or tibble.
 #' @param tree A fitted model object.
 #' @param ... Additional arguments to pass to other functions.
 #' @examples
@@ -57,7 +56,7 @@
 
 #' @export
 #' @rdname generics
-augment <- function(x, data, ...) {
+augment <- function(x, ...) {
   UseMethod("augment")
 }
 
