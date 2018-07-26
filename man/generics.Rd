@@ -101,6 +101,20 @@ consistent with the definitions in this package) include:
 
 \pkg{modegenerics} defines the classes using S4 but standard
 generic S3 methods are also produced.
+
+It is suggested that, if a package uses \pkg{modelgenerics}, it
+do so by \emph{importing} the package and re-exporting the method
+of interest. For example, if the \code{explain} method were being
+used, the roxygen2 code to do this would be
+
+\preformatted{
+    #' @importFrom modelgenerics explain
+    #' @export
+    modelgenerics::explain
+}
+
+This will help avoid collisions with methods contained in
+this package and others.
 }
 \examples{
 fit

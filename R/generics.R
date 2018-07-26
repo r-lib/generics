@@ -52,7 +52,21 @@ NULL
 #'
 #' \pkg{modegenerics} defines the classes using S4 but standard
 #'  generic S3 methods are also produced. 
-#'
+#'  
+#' It is suggested that, if a package uses \pkg{modelgenerics}, it
+#'  do so by _importing_ the package and re-exporting the method
+#'  of interest. For example, if the `explain` method were being
+#'  used, the roxygen2 code to do this would be 
+#'  
+#'  \preformatted{
+#'     #' @importFrom modelgenerics explain
+#'     #' @export
+#'     modelgenerics::explain
+#' }
+#' 
+#' This will help avoid collisions with methods contained in 
+#'  this package and others. 
+#'  
 #' @param object,x An object. See Details below. 
 #' @param tree A fitted model object.
 #' @param ... Additional arguments to pass to other functions.
