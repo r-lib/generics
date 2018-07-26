@@ -14,8 +14,6 @@
 \alias{tidy}
 \alias{train}
 \alias{var_imp}
-\alias{varimp}
-\alias{varImp}
 \title{Generic functions related to modeling}
 \usage{
 augment(x, ...)
@@ -43,10 +41,6 @@ tidy(x, ...)
 train(x, ...)
 
 var_imp(object, ...)
-
-varimp(object, ...)
-
-varImp(object, ...)
 }
 \arguments{
 \item{...}{Additional arguments to pass to other functions.}
@@ -61,26 +55,28 @@ package dependencies when multiple packages have the same
 method.
 }
 \details{
-An attempt was made to use S3 class signatures that were
-consistent with existing code. For example, \pkg{dplyr} and \pkg{lime}
-both have \code{explain} methods that do very different things but
-both take \code{x} as their main object. Even though \code{x} would be
-different in those cases, this package provides access to the S3
-generic so that other packages that may want to create \code{explain}
-methods for their objects can do so without loading either of
-the other packages.
+An attempt was made to use generic class signatures that were
+consistent with existing code. For example, \pkg{dplyr} and
+\pkg{lime} both have \code{explain} methods that do very different
+things but both take \code{x} as their main object. Even though \code{x}
+would be different in those cases, this package provides access
+to the S3 generic so that other packages that may want to create
+\code{explain} methods for their objects can do so without loading
+either of the other packages.
 
-For example, if a new \code{tidy} method is being developed for a package, this
-lightweight package can be the required dependency to have access to the
-generic method (instead of depending on \pkg{broom} and installing its
-dependencies).
+For example, if a new \code{tidy} method is being developed for a
+package, this lightweight package can be the required dependency
+to have access to the generic method (instead of depending on
+\pkg{broom} and installing its dependencies).
 
-In this package, snake case is preferred. The generics \code{varimp} and \code{varImp}
-are provided to maintain compatibility with existing packages (e.g. \code{party}
-and \code{caret}). Both refer to the \code{var_imp}
+In this package, snake case is preferred. The generics \code{varimp}
+and \code{varImp} are provided to maintain compatibility with
+existing packages (e.g. \code{party} and \code{caret}). Both refer to
+\code{var_imp}. In this way, new methods for \code{var_imp} can be used if
+your package has a \code{varimp} or \code{varImp} generic.
 
-Known non-S4 functions related to modeling (which may or may not be
-consistent with the definitions in this package):
+Known functions related to modeling (which may or may not be
+consistent with the definitions in this package) include:
 \itemize{
 \item \code{augment}: \pkg{broom}
 \item \code{compile}: \pkg{keras}, \pkg{tensorflow}
@@ -102,6 +98,9 @@ consistent with the definitions in this package):
 \item \code{varimp}: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
 \item \code{var_imp}: \pkg{datafsm}
 }
+
+\pkg{modegenerics} defines the classes using S4 but standard
+generic S3 methods are also produced.
 }
 \examples{
 fit

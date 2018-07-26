@@ -1,29 +1,34 @@
+#' @import methods
+NULL
+
 #' Generic functions related to modeling
 #'
 #' These are generic functions that can be used to minimize
-#' package dependencies when multiple packages have the same
-#' method.
+#'  package dependencies when multiple packages have the same
+#'  method.
 #'
-#' An attempt was made to use S3 class signatures that were
-#'  consistent with existing code. For example, \pkg{dplyr} and \pkg{lime}
-#'  both have `explain` methods that do very different things but
-#'  both take `x` as their main object. Even though `x` would be
-#'  different in those cases, this package provides access to the S3
-#'  generic so that other packages that may want to create `explain`
-#'  methods for their objects can do so without loading either of
-#'  the other packages.
+#' An attempt was made to use generic class signatures that were
+#'  consistent with existing code. For example, \pkg{dplyr} and
+#'  \pkg{lime} both have `explain` methods that do very different
+#'  things but both take `x` as their main object. Even though `x`
+#'  would be different in those cases, this package provides access
+#'  to the S3 generic so that other packages that may want to create
+#'  `explain` methods for their objects can do so without loading
+#'  either of the other packages.
 #' 
-#' For example, if a new `tidy` method is being developed for a package, this
-#'  lightweight package can be the required dependency to have access to the
-#'  generic method (instead of depending on \pkg{broom} and installing its
-#'  dependencies).
+#' For example, if a new `tidy` method is being developed for a
+#'  package, this lightweight package can be the required dependency
+#'  to have access to the generic method (instead of depending on
+#'  \pkg{broom} and installing its dependencies).
 #'  
-#' In this package, snake case is preferred. The generics `varimp` and `varImp`
-#'  are provided to maintain compatibility with existing packages (e.g. `party` 
-#'  and `caret`). Both refer to the `var_imp` 
+#' In this package, snake case is preferred. The generics `varimp`
+#'  and `varImp` are provided to maintain compatibility with
+#'  existing packages (e.g. `party` and `caret`). Both refer to
+#'  `var_imp`. In this way, new methods for `var_imp` can be used if
+#'  your package has a `varimp` or `varImp` generic.
 #'  
-#' Known non-S4 functions related to modeling (which may or may not be 
-#' consistent with the definitions in this package):
+#' Known functions related to modeling (which may or may not be 
+#'  consistent with the definitions in this package) include:
 #' 
 #' * `augment`: \pkg{broom}
 #' * `compile`: \pkg{keras}, \pkg{tensorflow}
@@ -45,6 +50,9 @@
 #' * `varimp`: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
 #' * `var_imp`: \pkg{datafsm}
 #'
+#' \pkg{modegenerics} defines the classes using S4 but standard
+#'  generic S3 methods are also produced. 
+#'
 #' @param object,x An object. See Details below. 
 #' @param tree A fitted model object.
 #' @param ... Additional arguments to pass to other functions.
@@ -56,90 +64,94 @@
 
 #' @export
 #' @rdname generics
-augment <- function(x, ...) {
-  UseMethod("augment")
-}
+setGeneric("augment", 
+           function(x, ...)
+             standardGeneric("augment"))
 
 #' @export
 #' @rdname generics
-compile <- function (object, ...) {
-  UseMethod("compile")
-}
+setGeneric("compile", 
+           function(object, ...)
+             standardGeneric("compile"))
 
 #' @export
 #' @rdname generics
-estfun <- function (x, ...) {
-  UseMethod("estfun")
-}
+setGeneric("estfun", 
+           function(x, ...)
+             standardGeneric("estfun"))
 
 #' @export
 #' @rdname generics
-evaluate <- function (x, ...) {
-  UseMethod("evaluate")
-}
+setGeneric("evaluate", 
+           function(x, ...)
+             standardGeneric("evaluate"))
 
 #' @export
 #' @rdname generics
-explain <- function (x, ...) {
-  UseMethod("explain")
-}
+setGeneric("explain", 
+           function(x, ...)
+             standardGeneric("explain"))
 
 #' @export
 #' @rdname generics
-fit <- function (object, ...) {
-  UseMethod("fit")
-}
+setGeneric("fit", 
+           function(object, ...)
+             standardGeneric("fit"))
 
 #' @export
 #' @rdname generics
-glance <- function(x, ...) {
-  UseMethod("glance")
-}
+setGeneric("glance", 
+           function(x, ...)
+             standardGeneric("glance"))
 
 #' @export
 #' @rdname generics
-learn <- function (x, ...) {
-  UseMethod("learn")
-}
+setGeneric("learn", 
+           function(x, ...)
+             standardGeneric("learn"))
 
 #' @export
 #' @rdname generics
-prune <- function (tree, ...) {
-  UseMethod("prune")
-}
+setGeneric("prune", 
+           function(tree, ...)
+             standardGeneric("prune"))
 
 #' @export
 #' @rdname generics
-refit <- function (object, ...) {
-  UseMethod("refit")
-}
+setGeneric("refit", 
+           function(object, ...)
+             standardGeneric("refit"))
 
 #' @export
 #' @rdname generics
-tidy <- function (x, ...) {
-  UseMethod("tidy")
-}
+setGeneric("tidy", 
+           function(x, ...)
+             standardGeneric("tidy"))
 
 #' @export
 #' @rdname generics
-train <- function (x, ...) {
-  UseMethod("train")
-}
+setGeneric("train", 
+           function(x, ...)
+             standardGeneric("train"))
 
 #' @export
 #' @rdname generics
-var_imp <- function (object, ...) {
-  UseMethod("var_imp")
-}
+setGeneric("var_imp", 
+           function(object, ...)
+             standardGeneric("var_imp"))
 
 #' @export
 #' @rdname generics
-varimp <- function (object, ...) {
-  UseMethod("var_imp")
-}
+suppressWarnings(
+  setGeneric("varimp", 
+             function(object, ...)
+               standardGeneric("var_imp"))
+)
 
 #' @export
 #' @rdname generics
-varImp <- function (object, ...) {
-  UseMethod("var_imp")
-}
+suppressWarnings(
+  setGeneric("varImp", 
+             function(object, ...)
+               standardGeneric("var_imp"))
+)
