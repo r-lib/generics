@@ -69,12 +69,6 @@ package, this lightweight package can be the required dependency
 to have access to the generic method (instead of depending on
 \pkg{broom} and installing its dependencies).
 
-In this package, snake case is preferred. The generics \code{varimp}
-and \code{varImp} are provided to maintain compatibility with
-existing packages (e.g. \code{party} and \code{caret}). Both refer to
-\code{var_imp}. In this way, new methods for \code{var_imp} can be used if
-your package has a \code{varimp} or \code{varImp} generic.
-
 Known functions related to modeling (which may or may not be
 consistent with the definitions in this package) include:
 \itemize{
@@ -94,8 +88,6 @@ consistent with the definitions in this package) include:
 \pkg{permutations}, and others.
 \item \code{train}: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
 \pkg{Information}, and others.
-\item \code{varImp}: \pkg{caret}, \pkg{datafsm}
-\item \code{varimp}: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
 \item \code{var_imp}: \pkg{datafsm}
 }
 

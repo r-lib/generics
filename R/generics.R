@@ -21,12 +21,6 @@ NULL
 #'  to have access to the generic method (instead of depending on
 #'  \pkg{broom} and installing its dependencies).
 #'  
-#' In this package, snake case is preferred. The generics `varimp`
-#'  and `varImp` are provided to maintain compatibility with
-#'  existing packages (e.g. `party` and `caret`). Both refer to
-#'  `var_imp`. In this way, new methods for `var_imp` can be used if
-#'  your package has a `varimp` or `varImp` generic.
-#'  
 #' Known functions related to modeling (which may or may not be 
 #'  consistent with the definitions in this package) include:
 #' 
@@ -46,8 +40,6 @@ NULL
 #'  \pkg{permutations}, and others. 
 #' * `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
 #'  \pkg{Information}, and others. 
-#' * `varImp`: \pkg{caret}, \pkg{datafsm}
-#' * `varimp`: \pkg{party}, \pkg{partykit} , \pkg{mboost}, \pkg{semtree}
 #' * `var_imp`: \pkg{datafsm}
 #'
 #' \pkg{modegenerics} defines the classes using S4 but standard
@@ -154,18 +146,3 @@ setGeneric("var_imp",
            function(object, ...)
              standardGeneric("var_imp"))
 
-#' @export
-#' @rdname generics
-suppressWarnings(
-  setGeneric("varimp", 
-             function(object, ...)
-               standardGeneric("var_imp"))
-)
-
-#' @export
-#' @rdname generics
-suppressWarnings(
-  setGeneric("varImp", 
-             function(object, ...)
-               standardGeneric("var_imp"))
-)
