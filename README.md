@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tidymodels/modelgenerics.svg?branch=master)](https://travis-ci.org/tidymodels/modelgenerics)
+[![Coverage status](https://codecov.io/gh/tidymodels/modelgenerics/branch/master/graph/badge.svg)](https://codecov.io/github/tidymodels/modelgenerics?branch=master)
 ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 `modelgenerics` is designed to alleviate the situation where multiple packages use the same class. For example, if two packages have methods for a `fit` class, there will be conflicts when both packages are loaded. One approach would be for one package to import the other but this may result in many additional package dependencies during installation. 
