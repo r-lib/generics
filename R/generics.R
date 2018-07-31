@@ -1,6 +1,3 @@
-#' @import methods
-NULL
-
 #' Generic functions related to modeling
 #'
 #' These are generic functions that can be used to minimize
@@ -42,8 +39,6 @@ NULL
 #'  \pkg{Information}, and others. 
 #' * `var_imp`: \pkg{datafsm}
 #'
-#' \pkg{modegenerics} defines the classes using S4 but standard
-#'  generic S3 methods are also produced. 
 #'  
 #' It is suggested that, if a package uses \pkg{modelgenerics}, it
 #'  do so by _importing_ the package and re-exporting the method
@@ -70,79 +65,80 @@ NULL
 
 #' @export
 #' @rdname generics
-setGeneric("augment", 
-           function(x, ...)
-             standardGeneric("augment"))
+augment <- function(x, ...) {
+  UseMethod("augment")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("compile", 
-           function(object, ...)
-             standardGeneric("compile"))
+compile <- function (object, ...) {
+  UseMethod("compile")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("estfun", 
-           function(x, ...)
-             standardGeneric("estfun"))
+estfun <- function (x, ...) {
+  UseMethod("estfun")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("evaluate", 
-           function(x, ...)
-             standardGeneric("evaluate"))
+evaluate <- function (x, ...) {
+  UseMethod("evaluate")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("explain", 
-           function(x, ...)
-             standardGeneric("explain"))
+explain <- function (x, ...) {
+  UseMethod("explain")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("fit", 
-           function(object, ...)
-             standardGeneric("fit"))
+fit <- function (object, ...) {
+  UseMethod("fit")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("glance", 
-           function(x, ...)
-             standardGeneric("glance"))
+glance <- function(x, ...) {
+  UseMethod("glance")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("learn", 
-           function(x, ...)
-             standardGeneric("learn"))
+learn <- function (x, ...) {
+  UseMethod("learn")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("prune", 
-           function(tree, ...)
-             standardGeneric("prune"))
+prune <- function (tree, ...) {
+  UseMethod("prune")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("refit", 
-           function(object, ...)
-             standardGeneric("refit"))
+refit <- function (object, ...) {
+  UseMethod("refit")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("tidy", 
-           function(x, ...)
-             standardGeneric("tidy"))
+tidy <- function (x, ...) {
+  UseMethod("tidy")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("train", 
-           function(x, ...)
-             standardGeneric("train"))
+train <- function (x, ...) {
+  UseMethod("train")
+}
 
 #' @export
 #' @rdname generics
-setGeneric("var_imp", 
-           function(object, ...)
-             standardGeneric("var_imp"))
+var_imp <- function (object, ...) {
+  UseMethod("var_imp")
+}
+
 
