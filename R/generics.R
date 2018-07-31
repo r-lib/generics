@@ -27,6 +27,8 @@
 #'   \pkg{psychotools}, \pkg{drc}, and others
 #' * `evaluate`: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
 #' * `explain`: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
+#' * `find_varying`: used by the development versions of \pkg{parsnip} and
+#'    \pkg{recipes}
 #' * `fit`: \pkg{keras}
 #' * `glance`: \pkg{broom}
 #' * `learn`: \pkg{grnn}, \pkg{pnn}
@@ -91,6 +93,12 @@ evaluate <- function (x, ...) {
 #' @rdname generics
 explain <- function (x, ...) {
   UseMethod("explain")
+}
+
+#' @export
+#' @rdname generics
+find_varying <- function (object, ...) {
+  UseMethod("find_varying")
 }
 
 #' @export

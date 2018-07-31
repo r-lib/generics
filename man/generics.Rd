@@ -6,6 +6,7 @@
 \alias{estfun}
 \alias{evaluate}
 \alias{explain}
+\alias{find_varying}
 \alias{fit}
 \alias{glance}
 \alias{learn}
@@ -25,6 +26,8 @@ estfun(x, ...)
 evaluate(x, ...)
 
 explain(x, ...)
+
+find_varying(object, ...)
 
 fit(object, ...)
 
@@ -78,6 +81,8 @@ consistent with the definitions in this package) include:
 \pkg{psychotools}, \pkg{drc}, and others
 \item \code{evaluate}: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
 \item \code{explain}: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
+\item \code{find_varying}: used by the development versions of \pkg{parsnip} and
+\pkg{recipes}
 \item \code{fit}: \pkg{keras}
 \item \code{glance}: \pkg{broom}
 \item \code{learn}: \pkg{grnn}, \pkg{pnn}
