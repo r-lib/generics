@@ -56,6 +56,15 @@
 #' This will help avoid collisions with methods contained in 
 #'  this package and others. 
 #'  
+#' It is **also highly recommended** that you add an _alias_ in the 
+#' documentation of your method for the generic, such as:
+#'  \preformatted{
+#'     #' @alias explain  
+#' }
+#' 
+#' In that way, when someone uses `?explain`, your specific method will show 
+#' up as one of the man page options.    
+#'  
 #' @param object,x An object. See Details below. 
 #' @param tree A fitted model object.
 #' @param ... Additional arguments to pass to other functions.

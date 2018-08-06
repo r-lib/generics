@@ -109,6 +109,15 @@ used, the roxygen2 code to do this would be
 
 This will help avoid collisions with methods contained in
 this package and others.
+
+It is \strong{also highly recommended} that you add an \emph{alias} in the
+documentation of your method for the generic, such as:
+\preformatted{
+    #' @alias explain  
+}
+
+In that way, when someone uses \code{?explain}, your specific method will show
+up as one of the man page options.
 }
 \examples{
 fit
