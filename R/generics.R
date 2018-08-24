@@ -12,18 +12,18 @@
 #'  to the S3 generic so that other packages that may want to create
 #'  `explain` methods for their objects can do so without loading
 #'  either of the other packages.
-#' 
+#'
 #' For example, if a new `tidy` method is being developed for a
 #'  package, this lightweight package can be the required dependency
 #'  to have access to the generic method (instead of depending on
 #'  \pkg{broom} and installing its dependencies).
-#'  
-#' Known functions related to modeling (which may or may not be 
+#'
+#' Known functions related to modeling (which may or may not be
 #'  consistent with the definitions in this package) include:
-#' 
+#'
 #' * `augment`: \pkg{broom}
 #' * `compile`: \pkg{keras}, \pkg{tensorflow}
-#' * `estfun`: \pkg{sandwich}, \pkg{ssym}, \pkg{gmm}, \pkg{maxLik}, 
+#' * `estfun`: \pkg{sandwich}, \pkg{ssym}, \pkg{gmm}, \pkg{maxLik},
 #'   \pkg{psychotools}, \pkg{drc}, and others
 #' * `evaluate`: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
 #' * `explain`: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
@@ -33,46 +33,46 @@
 #' * `glance`: \pkg{broom}
 #' * `learn`: \pkg{grnn}, \pkg{pnn}
 #' * `prune`: \pkg{rpart}, \pkg{dendextend}
-#' * `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit}, 
-#'  \pkg{glogis}, \pkg{fxregime}, and others. 
-#' * `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data}, 
-#'  \pkg{permutations}, and others. 
+#' * `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit},
+#'  \pkg{glogis}, \pkg{fxregime}, and others.
+#' * `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data},
+#'  \pkg{permutations}, and others.
 #' * `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
-#'  \pkg{Information}, and others. 
+#'  \pkg{Information}, and others.
 #' * `var_imp`: \pkg{datafsm}
 #'
-#'  
-#' It is suggested that, if a package uses \pkg{modelgenerics}, it
+#'
+#' It is suggested that, if a package uses \pkg{generics}, it
 #'  do so by _importing_ the package and re-exporting the method
 #'  of interest. For example, if the `explain` method were being
-#'  used, the roxygen2 code to do this would be 
-#'  
+#'  used, the roxygen2 code to do this would be
+#'
 #'  \preformatted{
-#'     #' @importFrom modelgenerics explain
+#'     #' @importFrom generics explain
 #'     #' @export
-#'     modelgenerics::explain
+#'     generics::explain
 #' }
-#' 
-#' This will help avoid collisions with methods contained in 
-#'  this package and others. 
-#'  
-#' It is **also highly recommended** that you add an _alias_ in the 
+#'
+#' This will help avoid collisions with methods contained in
+#'  this package and others.
+#'
+#' It is **also highly recommended** that you add an _alias_ in the
 #' documentation of your method for the generic, such as:
 #'  \preformatted{
-#'     #' @alias explain  
+#'     #' @alias explain
 #' }
-#' 
-#' In that way, when someone uses `?explain`, your specific method will show 
-#' up as one of the man page options.    
-#'  
-#' @param object,x An object. See Details below. 
+#'
+#' In that way, when someone uses `?explain`, your specific method will show
+#' up as one of the man page options.
+#'
+#' @param object,x An object. See Details below.
 #' @param tree A fitted model object.
 #' @param ... Additional arguments to pass to other functions.
 #' @examples
 #' fit
 #'
 #' tidy
-#' 
+#'
 
 #' @export
 #' @rdname generics

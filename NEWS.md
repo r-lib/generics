@@ -1,4 +1,4 @@
-# `modelgenerics` 0.0.1
+# `generics` 0.0.1
 
 First CRAN version
 

@@ -1,7 +1,8 @@
-Package: modelgenerics
+Package: generics
 Version: 0.0.1.9000
-Title: Generic Methods Related to Model Fitting
-Description: In order to reduce potential package dependencies, generic methods are provided for model related verbs (e.g., fit, train, etc.).
+Title: Common S3 Generics Not Provided by Base R Methods Related to Model Fitting
+Description: In order to reduce potential package dependencies and conflicts, 
+    generics provides a number of commonly used S3 generics.
 Authors@R: c(
     person("Max", "Kuhn", , "max@rstudio.com", c("aut", "cre")),
     person("RStudio", role = "cph"))
@@ -9,6 +10,6 @@ License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
-URL: https://github.com/tidymodels/modelgenerics
-BugReports: https://github.com/tidymodels/modelgenerics/issues
+RoxygenNote: 6.1.0
+URL: https://github.com/r-lib/generics
+BugReports: https://github.com/r-lib/generics

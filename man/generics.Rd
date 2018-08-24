@@ -96,15 +96,15 @@ consistent with the definitions in this package) include:
 \item \code{var_imp}: \pkg{datafsm}
 }
 
-It is suggested that, if a package uses \pkg{modelgenerics}, it
+It is suggested that, if a package uses \pkg{generics}, it
 do so by \emph{importing} the package and re-exporting the method
 of interest. For example, if the \code{explain} method were being
 used, the roxygen2 code to do this would be
 
 \preformatted{
-    #' @importFrom modelgenerics explain
+    #' @importFrom generics explain
     #' @export
-    modelgenerics::explain
+    generics::explain
 }
 
 This will help avoid collisions with methods contained in
@@ -113,7 +113,7 @@ this package and others.
 It is \strong{also highly recommended} that you add an \emph{alias} in the
 documentation of your method for the generic, such as:
 \preformatted{
-    #' @alias explain  
+    #' @alias explain
 }
 
 In that way, when someone uses \code{?explain}, your specific method will show

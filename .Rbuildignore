@@ -1,4 +1,5 @@
-modelgenerics.Rproj
+^README\.Rmd$
+generics.Rproj
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.travis\.yml$
