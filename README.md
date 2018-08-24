@@ -2,7 +2,7 @@
 # generics
 
 [![Build
-Status](https://travis-ci.org/r-lib/generics.svg?branch=master)](https://travis-ci.orgr-lib/generics)
+Status](https://travis-ci.org/r-lib/generics.svg?branch=master)](https://travis-ci.org/r-lib/generics)
 [![Coverage
 status](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://codecov.io/github/r-lib/generics?branch=master)
 ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
@@ -35,14 +35,14 @@ fit
 #> function (object, ...) {
 #>   UseMethod("fit")
 #> }
-#> <bytecode: 0x7fe02a074468>
+#> <bytecode: 0x7fca3883ac68>
 #> <environment: namespace:generics>
 
 tidy
 #> function (x, ...) {
 #>   UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fe02a2152d0>
+#> <bytecode: 0x7fca3944a8d0>
 #> <environment: namespace:generics>
 ```
 
@@ -58,7 +58,7 @@ generics::explain
 #> function (x, ...) {
 #>   UseMethod("explain")
 #> }
-#> <bytecode: 0x7fe02a67f6a8>
+#> <bytecode: 0x7fca379d14a8>
 #> <environment: namespace:generics>
 ```
 
