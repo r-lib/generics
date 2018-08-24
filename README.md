@@ -1,4 +1,6 @@
 
+# generics
+
 [![Build
 Status](https://travis-ci.org/r-lib/generics.svg?branch=master)](https://travis-ci.orgr-lib/generics)
 [![Coverage
@@ -6,10 +8,11 @@ status](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](htt
 ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 generics is designed to alleviate the situation where multiple packages
-use the same class. For example, if two packages have methods for a
-`fit` class, there will be conflicts when both packages are loaded. One
-approach would be for one package to import the other but this may
-result in many additional package dependencies during installation.
+define a generic with the same name. For example, if two packages define
+a `fit()` generic and methods, there will be conflicts when both
+packages are loaded. One approach would be for one package to import the
+other but this may result in many additional package dependencies during
+installation.
 
 ## Installation
 
@@ -32,14 +35,14 @@ fit
 #> function (object, ...) {
 #>   UseMethod("fit")
 #> }
-#> <bytecode: 0x7fc20584e458>
+#> <bytecode: 0x7fe02a074468>
 #> <environment: namespace:generics>
 
 tidy
 #> function (x, ...) {
 #>   UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fc205bbb8c0>
+#> <bytecode: 0x7fe02a2152d0>
 #> <environment: namespace:generics>
 ```
 
@@ -55,7 +58,7 @@ generics::explain
 #> function (x, ...) {
 #>   UseMethod("explain")
 #> }
-#> <bytecode: 0x7fc209025490>
+#> <bytecode: 0x7fe02a67f6a8>
 #> <environment: namespace:generics>
 ```
 

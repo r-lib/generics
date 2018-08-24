@@ -6,12 +6,13 @@ output: github_document
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
+# generics
 
 [![Build Status](https://travis-ci.org/r-lib/generics.svg?branch=master)](https://travis-ci.orgr-lib/generics)
 [![Coverage status](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://codecov.io/github/r-lib/generics?branch=master)
 ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
-generics is designed to alleviate the situation where multiple packages use the same class. For example, if two packages have methods for a `fit` class, there will be conflicts when both packages are loaded. One approach would be for one package to import the other but this may result in many additional package dependencies during installation. 
+generics is designed to alleviate the situation where multiple packages define a generic with the same name. For example, if two packages define a `fit()` generic and methods, there will be conflicts when both packages are loaded. One approach would be for one package to import the other but this may result in many additional package dependencies during installation. 
 
 ## Installation
 
