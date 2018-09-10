@@ -42,6 +42,11 @@ These functions override the set functions provided in base to make them
 generic so that packages can provide methods for different data types. The
 default methods call the base versions.
 }
+\section{Methods}{
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+}
+
 \examples{
 intersect(1:5, 4:8)
 union(1:5, 4:8)

@@ -8,6 +8,9 @@
 #' generic so that packages can provide methods for different data types. The
 #' default methods call the base versions.
 #'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#'
 #' @param x,y Vectors to combine.
 #' @param el,set Element and set to compare.
 #' @param ... Other arguments passed on to methods.
