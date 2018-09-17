@@ -43,8 +43,7 @@ as.ordered <- function(x, ...) UseMethod("as.ordered")
 
 #' @rdname coercion
 #' @export
-as.difftime <- function(tim, ...)
-  UseMethod("as.difftime")
+as.difftime <- function(tim, ...) UseMethod("as.difftime")
 
 
 #' @export
