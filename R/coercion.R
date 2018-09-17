@@ -16,6 +16,7 @@
 #' a character. The default is a locale-specific time format.
 #' @param units A single character specifying units in which the results are
 #' desired. Required if `tim` is a numeric.
+#' @param ... Other arguments passed on to methods.
 #' @return
 #'   For `as.factor()` and `as.ordered()`, a factor or ordered factor.
 #'

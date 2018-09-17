@@ -19,6 +19,8 @@ as.difftime(tim, ...)
 \arguments{
 \item{x}{A vector of data.}
 
+\item{...}{Other arguments passed on to methods.}
+
 \item{tim}{A vector specifying a time interval.}
 
 \item{format}{A single character specifying the format of \code{tim} when it is
