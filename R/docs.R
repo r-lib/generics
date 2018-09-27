@@ -1,12 +1,8 @@
 # Modified from sloop::methods_generic
-methods_find <- function(x, visible = TRUE) {
+methods_find <- function(x) {
   info <- attr(utils::methods(x), "info")
   info$method <- rownames(info)
   rownames(info) <- NULL
-
-  if (visible) {
-    info <- info[info$visible, , drop = FALSE]
-  }
 
   # Simply class and source
   generic_esc <- gsub("\\.", "\\\\.", x)
