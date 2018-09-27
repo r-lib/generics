@@ -10,10 +10,12 @@ methods_find <- function(x) {
   info$class <- gsub("-method$", "", info$class)
   info$source <- gsub(paste0(" for ", generic_esc), "", info$from)
 
+  # Find package
+  info$package <- lookup_package(info$generic, info$class)
+
   # Find help topic
-  path <- help_path(info$generic, info$class)
+  path <- help_path(info$method, info$package)
   pieces <- strsplit(path, "/")
-  info$package <- vapply(pieces, last, n = 2, FUN.VALUE = character(1))
   info$topic <- vapply(pieces, last, character(1))
 
   info[c("method", "class", "package", "topic", "visible", "source")]
@@ -56,16 +58,8 @@ last <- function(x, n = 0) {
   }
 }
 
-help_path <- function(generic, class) {
-
-  lookup_package <- function(generic, class) {
-    utils::packageName(environment(utils::getS3method(generic, class)))
-  }
-
-  generic_class <- paste(generic, class, sep = ".")
-
-  pkg <- map2(generic, class, lookup_package)
-  help <- map2(generic_class, pkg, utils::help)
+help_path <- function(x, package) {
+  help <- map2(x, package, utils::help)
 
   vapply(help,
     function(x) if (length(x) == 0) NA_character_ else as.character(x),
@@ -73,6 +67,19 @@ help_path <- function(generic, class) {
   )
 }
 
+lookup_package <- function(generic, class) {
+  lookup_single_package <- function(generic, class) {
+    fn <- utils::getS3method(generic, class)
+    utils::packageName(environment(fn))
+  }
+
+  map2_chr(generic, class, lookup_single_package)
+}
+
 map2 <- function(.x, .y, .f, ...) {
   mapply(.f, .x, .y, MoreArgs = list(...), SIMPLIFY = FALSE)
+}
+
+map2_chr <- function(.x, .y, .f, ...) {
+  as.vector(map2(.x, .y, .f, ...), "character")
 }
