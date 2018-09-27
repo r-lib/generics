@@ -59,7 +59,7 @@ last <- function(x, n = 0) {
 help_path <- function(generic, class) {
 
   lookup_package <- function(generic, class) {
-    packageName(environment(getS3method(generic, class)))
+    utils::packageName(environment(utils::getS3method(generic, class)))
   }
 
   generic_class <- paste(generic, class, sep = ".")
