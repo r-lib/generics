@@ -27,7 +27,7 @@ methods_rd <- function(x) {
     return("No methods found in currently loaded packages.")
   }
 
-  topics <- split(methods, list(methods$topic, methods$package))
+  topics <- split(methods, paste(methods$topic, methods$package, sep = "."))
   names(topics) <- NULL
 
   bullets <- vapply(topics, function(x) {
