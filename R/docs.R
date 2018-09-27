@@ -20,7 +20,7 @@ methods_find <- function(x, visible = TRUE) {
   info$package <- vapply(pieces, last, n = 2, FUN.VALUE = character(1))
   info$topic <- vapply(pieces, last, character(1))
 
-  info[c("method", "generic", "class", "package", "topic", "visible", "source", "isS4")]
+  info[c("method", "class", "package", "topic", "visible", "source")]
 }
 
 methods_rd <- function(x) {
