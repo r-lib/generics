@@ -11,7 +11,7 @@ methods_find <- function(x) {
   info$source <- gsub(paste0(" for ", generic_esc), "", info$from)
 
   # Find package
-  info$package <- lookup_package(info$generic, info$class)
+  info$package <- lookup_package(x, info$class)
 
   # Find help topic
   path <- help_path(info$method, info$package)
