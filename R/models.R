@@ -1,160 +1,157 @@
-#' Generic functions related to modeling
+#' augment
 #'
-#' These are generic functions that can be used to minimize
-#'  package dependencies when multiple packages have the same
-#'  method.
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("augment")}
 #'
-#' An attempt was made to use generic class signatures that were
-#'  consistent with existing code. For example, \pkg{dplyr} and
-#'  \pkg{lime} both have `explain` methods that do very different
-#'  things but both take `x` as their main object. Even though `x`
-#'  would be different in those cases, this package provides access
-#'  to the S3 generic so that other packages that may want to create
-#'  `explain` methods for their objects can do so without loading
-#'  either of the other packages.
-#'
-#' For example, if a new `tidy` method is being developed for a
-#'  package, this lightweight package can be the required dependency
-#'  to have access to the generic method (instead of depending on
-#'  \pkg{broom} and installing its dependencies).
-#'
-#' Known functions related to modeling (which may or may not be
-#'  consistent with the definitions in this package) include:
-#'
-#' * `augment`: \pkg{broom}
-#' * `compile`: \pkg{keras}, \pkg{tensorflow}
-#' * `estfun`: \pkg{sandwich}, \pkg{ssym}, \pkg{gmm}, \pkg{maxLik},
-#'   \pkg{psychotools}, \pkg{drc}, and others
-#' * `evaluate`: \pkg{keras}, \pkg{tensorflow}, \pkg{healthcareai}
-#' * `explain`: \pkg{dplyr}, \pkg{lime}, \pkg{DALEX}
-#' * `find_varying`: used by the development versions of \pkg{parsnip} and
-#'    \pkg{recipes}
-#' * `fit`: \pkg{keras}
-#' * `glance`: \pkg{broom}
-#' * `learn`: \pkg{grnn}, \pkg{pnn}
-#' * `prune`: \pkg{rpart}, \pkg{dendextend}
-#' * `refit`: \pkg{modeltools}, \pkg{lmSubsets}, \pkg{partykit},
-#'  \pkg{glogis}, \pkg{fxregime}, and others.
-#' * `tidy`: \pkg{broom}, \pkg{estimatr}, \pkg{radiant.data},
-#'  \pkg{permutations}, and others.
-#' * `train`: \pkg{caret}, \pkg{tensorflow}, \pkg{mlr}, \pkg{RSNNS},
-#'  \pkg{Information}, and others.
-#' * `var_imp`: \pkg{datafsm}
-#'
-#'
-#' It is suggested that, if a package uses \pkg{generics}, it
-#'  do so by _importing_ the package and re-exporting the method
-#'  of interest. For example, if the `explain` method were being
-#'  used, the roxygen2 code to do this would be
-#'
-#'  \preformatted{
-#'     #' @importFrom generics explain
-#'     #' @export
-#'     generics::explain
-#' }
-#'
-#' This will help avoid collisions with methods contained in
-#'  this package and others.
-#'
-#' It is **also highly recommended** that you add an _alias_ in the
-#' documentation of your method for the generic, such as:
-#'  \preformatted{
-#'     #' @alias explain
-#' }
-#'
-#' In that way, when someone uses `?explain`, your specific method will show
-#' up as one of the man page options.
-#'
-#' @param object,x An object. See Details below.
-#' @param tree A fitted model object.
+#' @param x An object. See the individual method for specifics.
 #' @param ... Additional arguments to pass to other functions.
-#' @examples
-#' fit
-#'
-#' tidy
-#'
-
 #' @export
-#' @rdname generics
 augment <- function(x, ...) {
   UseMethod("augment")
 }
 
+#' compile
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("compile")}
+#'
+#' @inheritParams augment
+#' @param object An object. See the individual method for specifics.
 #' @export
-#' @rdname generics
-compile <- function (object, ...) {
+compile <- function(object, ...) {
   UseMethod("compile")
 }
 
+#' estfun
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("estfun")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-estfun <- function (x, ...) {
+estfun <- function(x, ...) {
   UseMethod("estfun")
 }
 
+#' evaluate
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("evaluate")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-evaluate <- function (x, ...) {
+evaluate <- function(x, ...) {
   UseMethod("evaluate")
 }
 
+#' explain
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("explain")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-explain <- function (x, ...) {
+explain <- function(x, ...) {
   UseMethod("explain")
 }
 
+#' find_varying
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("find_varying")}
+#'
+#' @inheritParams compile
 #' @export
-#' @rdname generics
-find_varying <- function (object, ...) {
+find_varying <- function(object, ...) {
   UseMethod("find_varying")
 }
 
+#' fit
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("fit")}
+#'
+#' @inheritParams compile
 #' @export
-#' @rdname generics
-fit <- function (object, ...) {
+fit <- function(object, ...) {
   UseMethod("fit")
 }
 
+#' glance
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("glance")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
 glance <- function(x, ...) {
   UseMethod("glance")
 }
 
+#' learn
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("learn")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-learn <- function (x, ...) {
+learn <- function(x, ...) {
   UseMethod("learn")
 }
 
+#' prune
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("prune")}
+#'
+#' @inheritParams augment
+#' @param tree A fitted model object.
 #' @export
-#' @rdname generics
-prune <- function (tree, ...) {
+prune <- function(tree, ...) {
   UseMethod("prune")
 }
 
+#' refit
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("refit")}
+#'
+#' @inheritParams compile
 #' @export
-#' @rdname generics
-refit <- function (object, ...) {
+refit <- function(object, ...) {
   UseMethod("refit")
 }
 
+#' tidy
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("tidy")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-tidy <- function (x, ...) {
+tidy <- function(x, ...) {
   UseMethod("tidy")
 }
 
+#' train
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("train")}
+#'
+#' @inheritParams augment
 #' @export
-#' @rdname generics
-train <- function (x, ...) {
+train <- function(x, ...) {
   UseMethod("train")
 }
 
+#' var_imp
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("var_imp")}
+#'
+#' @inheritParams compile
 #' @export
-#' @rdname generics
-var_imp <- function (object, ...) {
+var_imp <- function(object, ...) {
   UseMethod("var_imp")
 }
 
