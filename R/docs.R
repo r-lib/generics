@@ -11,7 +11,7 @@ methods_find <- function(x) {
   info$source <- gsub(paste0(" for ", generic_esc), "", info$from)
 
   # Find help topic
-  path <- help_path(info$method)
+  path <- help_path(info$generic, info$class)
   pieces <- strsplit(path, "/")
   info$package <- vapply(pieces, last, n = 2, FUN.VALUE = character(1))
   info$topic <- vapply(pieces, last, character(1))
@@ -56,10 +56,23 @@ last <- function(x, n = 0) {
   }
 }
 
-help_path <- function(x) {
-  help <- lapply(x, utils::help)
+help_path <- function(generic, class) {
+
+  lookup_package <- function(generic, class) {
+    packageName(environment(getS3method(generic, class)))
+  }
+
+  generic_class <- paste(generic, class, sep = ".")
+
+  pkg <- map2(generic, class, lookup_package)
+  help <- map2(generic_class, pkg, utils::help)
+
   vapply(help,
     function(x) if (length(x) == 0) NA_character_ else as.character(x),
     FUN.VALUE = character(1)
   )
+}
+
+map2 <- function(.x, .y, .f, ...) {
+  mapply(.f, .x, .y, MoreArgs = list(...), SIMPLIFY = FALSE)
 }
