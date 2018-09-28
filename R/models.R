@@ -77,6 +77,17 @@ fit <- function(object, ...) {
   UseMethod("fit")
 }
 
+#' fit_xy
+#'
+#' @section Methods:
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("fit_xy")}
+#'
+#' @inheritParams compile
+#' @export
+fit_xy <- function(object, ...) {
+  UseMethod("fit_xy")
+}
+
 #' glance
 #'
 #' @section Methods:
