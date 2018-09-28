@@ -9,7 +9,7 @@ methods_find <- function(x) {
   info$method <- rownames(info)
   rownames(info) <- NULL
 
-  if(getRversion() <= R_system_version("3.1.3")) {
+  if(getRversion() < "3.2") {
     info$isS4 <- grepl("-method$", info$method)
   }
 
