@@ -2,14 +2,14 @@
 methods_find <- function(x) {
   info <- attr(utils::methods(x), "info")
 
-  if(nrow(info) == 0) {
+  if (nrow(info) == 0) {
     return(data.frame())
   }
 
   info$method <- rownames(info)
   rownames(info) <- NULL
 
-  if(getRversion() < "3.2") {
+  if (getRversion() < "3.2") {
     info$isS4 <- grepl("-method$", info$method)
   }
 
@@ -100,7 +100,7 @@ help_path <- function(x, package) {
 }
 
 locate_help_doc <- function(x, package) {
-  if(is.na(package)) {
+  if (is.na(package)) {
     utils::help(x)
   } else {
     utils::help(x, (package))
@@ -111,7 +111,7 @@ lookup_package <- function(generic, class, is_s4) {
 
   lookup_single_package <- function(generic, class, is_s4) {
 
-    if(is_s4) {
+    if (is_s4) {
 
       class <- strsplit(class, ",")[[1]]
       fn <- methods::getMethod(generic, class, optional = TRUE)
@@ -123,14 +123,14 @@ lookup_package <- function(generic, class, is_s4) {
     }
 
     # Not found
-    if(is.null(fn)) {
+    if (is.null(fn)) {
       return(NA_character_)
     }
 
     pkg <- utils::packageName(environment(fn))
 
     # Function method found, but in a non-package environment
-    if(is.null(pkg)) {
+    if (is.null(pkg)) {
       return(NA_character_)
     }
 
