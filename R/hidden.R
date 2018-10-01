@@ -2,8 +2,6 @@
 
 #' Generic test
 #'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("generic_test")}
 #'
 #' @param x A parameter
 #'
