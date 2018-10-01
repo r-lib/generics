@@ -48,7 +48,12 @@ methods_rd <- function(x) {
     bullet_vec <- vapply(
       X = topics,
       FUN = function(x) {
-        link <- paste0("\\code{\\link[", x$package[[1]], "]{", x$topic[[1]], "}}")
+        link <- paste0(
+          "\\code{",
+          "\\link[", x$package[[1]], "]",
+          "{", x$topic[[1]], "}",
+          "}"
+        )
         classes <- paste0("\\code{", x$class, "}", collapse = ", ")
         paste0("\\item ", link, ": ", classes)
       },
@@ -66,8 +71,12 @@ methods_rd <- function(x) {
   bullets <- lapply(topics_by_package, make_bullets)
   headers <- lapply(names(topics_by_package), make_header)
 
+  help_msg <- paste0(
+    "See the following help topics for more details about individual methods:\n"
+  )
+
   paste0(
-    c("See the following help topics for more details about individual methods:\n",
+    c(help_msg,
       paste(
         headers,
         "\\itemize{",
