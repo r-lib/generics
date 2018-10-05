@@ -9,7 +9,7 @@ var_imp(object, ...)
 \arguments{
 \item{object}{An object. See the individual method for specifics.}
 
-\item{...}{Additional arguments to pass to other functions.}
+\item{...}{Addition arguments to \code{augment} method.}
 }
 \description{
 var_imp

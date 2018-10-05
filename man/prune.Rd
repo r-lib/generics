@@ -9,7 +9,7 @@ prune(tree, ...)
 \arguments{
 \item{tree}{A fitted model object.}
 
-\item{...}{Additional arguments to pass to other functions.}
+\item{...}{Addition arguments to \code{augment} method.}
 }
 \description{
 prune

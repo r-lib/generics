@@ -7,9 +7,10 @@
 estfun(x, ...)
 }
 \arguments{
-\item{x}{An object. See the individual method for specifics.}
+\item{x}{Model object or other R object with information to append to
+observations.}
 
-\item{...}{Additional arguments to pass to other functions.}
+\item{...}{Addition arguments to \code{augment} method.}
 }
 \description{
 estfun
