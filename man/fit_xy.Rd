@@ -9,7 +9,7 @@ fit_xy(object, ...)
 \arguments{
 \item{object}{An object. See the individual method for specifics.}
 
-\item{...}{other arguments passed to methods}
+\item{...}{Other arguments passed to methods}
 }
 \description{
 Estimates parameters for a given model from a set of data in the form of
