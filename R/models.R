@@ -1,15 +1,3 @@
-#' compile
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("compile")}
-#'
-#' @inheritParams augment
-#' @param object An object. See the individual method for specifics.
-#' @export
-compile <- function(object, ...) {
-  UseMethod("compile")
-}
-
 #' estfun
 #'
 #' @section Methods:
@@ -52,28 +40,6 @@ explain <- function(x, ...) {
 #' @export
 find_varying <- function(object, ...) {
   UseMethod("find_varying")
-}
-
-#' fit
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("fit")}
-#'
-#' @inheritParams compile
-#' @export
-fit <- function(object, ...) {
-  UseMethod("fit")
-}
-
-#' fit_xy
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("fit_xy")}
-#'
-#' @inheritParams compile
-#' @export
-fit_xy <- function(object, ...) {
-  UseMethod("fit_xy")
 }
 
 #' learn
