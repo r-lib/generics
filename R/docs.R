@@ -3,7 +3,8 @@ methods_find <- function(x) {
   info <- attr(utils::methods(x), "info")
 
   if (nrow(info) == 0) {
-    return(data.frame())
+    info$topic <- character()
+    return(info)
   }
 
   info$method <- rownames(info)
