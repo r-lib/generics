@@ -1,15 +1,3 @@
-#' augment
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("augment")}
-#'
-#' @param x An object. See the individual method for specifics.
-#' @param ... Additional arguments to pass to other functions.
-#' @export
-augment <- function(x, ...) {
-  UseMethod("augment")
-}
-
 #' compile
 #'
 #' @section Methods:
@@ -88,17 +76,6 @@ fit_xy <- function(object, ...) {
   UseMethod("fit_xy")
 }
 
-#' glance
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("glance")}
-#'
-#' @inheritParams augment
-#' @export
-glance <- function(x, ...) {
-  UseMethod("glance")
-}
-
 #' learn
 #'
 #' @section Methods:
@@ -131,17 +108,6 @@ prune <- function(tree, ...) {
 #' @export
 refit <- function(object, ...) {
   UseMethod("refit")
-}
-
-#' tidy
-#'
-#' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("tidy")}
-#'
-#' @inheritParams augment
-#' @export
-tidy <- function(x, ...) {
-  UseMethod("tidy")
 }
 
 #' train
