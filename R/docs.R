@@ -110,11 +110,21 @@ help_path <- function(x, package) {
 }
 
 locate_help_doc <- function(x, package) {
-  if (is.na(package)) {
-    utils::help(x)
+  help <- if (requireNamespace("pkgload", quietly = TRUE)) {
+    get("shim_help", asNamespace("pkgload"))
   } else {
-    utils::help(x, (package))
+    utils::help
   }
+
+  if (is.na(package)) {
+    help(x)
+  } else {
+    help(x, (package))
+  }
+}
+
+as.character.dev_topic <- function(x, ...) {
+  sub("[.]Rd$", "", x$path)
 }
 
 lookup_package <- function(generic, class, is_s4) {
