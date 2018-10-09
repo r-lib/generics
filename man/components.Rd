@@ -16,9 +16,12 @@ A dataset (\code{\link[tibble:tibble]{tibble::tibble()}} or similar) containing 
 the object.
 }
 \description{
-Decomposition methods and some modelling techniques can be used to decompose
-a dataset into components of interest. This function is used to extract
-these components in a tidy data format.
+\code{components} can be used to extract elements from an object.
+}
+\details{
+For example, decomposition methods and some modelling techniques can be used
+to decompose a dataset into components of interest. This function is used
+to extract these components in a tidy data format.
 }
 \section{Methods}{
 

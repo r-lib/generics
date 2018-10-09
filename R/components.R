@@ -1,8 +1,10 @@
 #' Extract components
 #'
-#' Decomposition methods and some modelling techniques can be used to decompose
-#' a dataset into components of interest. This function is used to extract
-#' these components in a tidy data format.
+#' `components` can be used to extract elements from an object.
+#'
+#' For example, decomposition methods and some modelling techniques can be used
+#' to decompose a dataset into components of interest. This function is used
+#' to extract these components in a tidy data format.
 #'
 #' @param object A data separable object.
 #' @param ... Other arguments passed to methods
