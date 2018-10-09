@@ -12,7 +12,7 @@ equation(object, ...)
 \item{...}{Other arguments passed to methods}
 }
 \value{
-LaTeX output suitable for usage within R Markdown documents.
+Markup output suitable for rendering the equation.
 }
 \description{
 Display the mathematical representation of a fitted model.

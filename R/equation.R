@@ -5,7 +5,7 @@
 #' @param object A fitted model object.
 #' @param ... Other arguments passed to methods
 #'
-#' @return LaTeX output suitable for usage within R Markdown documents.
+#' @return Markup output suitable for rendering the equation.
 #'
 #' @section Methods:
 #' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("equation")}
