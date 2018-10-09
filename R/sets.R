@@ -10,29 +10,25 @@
 #'
 #' @section Methods:
 #'
-#' **`intersect()`**
+#' \subsection{`intersect()`}{
+#'     \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#' }
 #'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#' \subsection{`union()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+#' }
 #'
-#' \cr
-#' **`union()`**
+#' \subsection{`setdiff()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+#' }
 #'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+#' \subsection{`setequal()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+#' }
 #'
-#' \cr
-#' **`setdiff()`**
-#'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
-#'
-#' \cr
-#' **`setequal()`**
-#'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
-#'
-#' \cr
-#' **`is.element()`**
-#'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
+#' \subsection{`is.element()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
+#' }
 #'
 #' @param x,y Vectors to combine.
 #' @param el,set Element and set to compare.

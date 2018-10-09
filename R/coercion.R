@@ -8,14 +8,14 @@
 #'
 #' @section Methods:
 #'
-#' **`as.factor()`**
+#' \subsection{`as.factor()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+#' }
 #'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+#' \subsection{`as.ordered()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
+#' }
 #'
-#' \cr
-#' **`as.ordered()`**
-#'
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
 #'
 #' @param x A vector of data.
 #' @param ... Other arguments passed on to methods.
