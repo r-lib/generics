@@ -64,7 +64,7 @@ setdiff <- function(x, y, ...) UseMethod("setdiff")
 setequal <- function(x, y, ...) UseMethod("setequal")
 #' @rdname setops
 #' @export
-is.element <- function(el, set, ...) UseMethod("setequal")
+is.element <- function(el, set, ...) UseMethod("is.element")
 
 #' @export
 intersect.default <- function(x, y, ...) base::intersect(x, y, ...)
