@@ -1,0 +1,6 @@
+See the following help topics for more details about individual methods:
+
+\code{testGenericsExtension}
+\itemize{
+\item \code{\link[testGenericsExtension]{tidy-special}}: \code{special_method}
+}
