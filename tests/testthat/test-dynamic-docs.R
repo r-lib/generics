@@ -16,9 +16,9 @@ teardown({
 # Testing ----------------------------------------------------------------------
 
 test_that("Equivalent rd", {
-  expect_equal(
-    methods_rd("generic_test"),
-    "See the following help topics for more details about individual methods:\n\n\\code{testS3Docs}\n\\itemize{\n\\item \\code{\\link[testS3Docs]{generic-test-2}}: \\code{default}\n}"
+  expect_output_file(
+    cat(methods_rd("generic_test")),
+    "testS3Docs/test-1.txt"
   )
 })
 
