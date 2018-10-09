@@ -1,5 +1,3 @@
-# Internal generic used for testing purposes
-
 #' Generic test
 #'
 #'
