@@ -7,7 +7,15 @@
 #' default methods call the base versions.
 #'
 #' @section Methods:
+#'
+#' **`as.factor()`**
+#'
 #' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+#'
+#' \cr
+#' **`as.ordered()`**
+#'
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
 #'
 #' @param x A vector of data.
 #' @param ... Other arguments passed on to methods.

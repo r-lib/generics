@@ -44,7 +44,30 @@ default methods call the base versions.
 }
 \section{Methods}{
 
+
+\strong{\code{intersect()}}
+
 \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+
+\cr
+\strong{\code{union()}}
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+
+\cr
+\strong{\code{setdiff()}}
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+
+\cr
+\strong{\code{setequal()}}
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+
+\cr
+\strong{\code{is.element()}}
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
 }
 
 \examples{

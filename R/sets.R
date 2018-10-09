@@ -9,7 +9,30 @@
 #' default methods call the base versions.
 #'
 #' @section Methods:
+#'
+#' **`intersect()`**
+#'
 #' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#'
+#' \cr
+#' **`union()`**
+#'
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+#'
+#' \cr
+#' **`setdiff()`**
+#'
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+#'
+#' \cr
+#' **`setequal()`**
+#'
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+#'
+#' \cr
+#' **`is.element()`**
+#'
+#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
 #'
 #' @param x,y Vectors to combine.
 #' @param el,set Element and set to compare.

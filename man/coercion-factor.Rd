@@ -29,7 +29,15 @@ default methods call the base versions.
 }
 \section{Methods}{
 
+
+\strong{\code{as.factor()}}
+
 \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+
+\cr
+\strong{\code{as.ordered()}}
+
+\Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
 }
 
 \examples{
