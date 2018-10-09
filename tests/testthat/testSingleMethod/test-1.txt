@@ -1,0 +1,6 @@
+See the following help topics for more details about individual methods:
+
+\code{testSingleMethod}
+\itemize{
+\item \code{\link[testSingleMethod]{single-method-2}}: \code{default}
+}

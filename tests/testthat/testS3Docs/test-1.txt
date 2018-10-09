@@ -1,6 +1,0 @@
-See the following help topics for more details about individual methods:
-
-\code{testS3Docs}
-\itemize{
-\item \code{\link[testS3Docs]{generic-test-2}}: \code{default}
-}
