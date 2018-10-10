@@ -36,6 +36,12 @@ Useful links:
 \author{
 \strong{Maintainer}: Max Kuhn \email{max@rstudio.com}
 
+Authors:
+\itemize{
+  \item Hadley Wickham \email{hadley@rstudio.com}
+  \item Davis Vaughan \email{davis@rstudio.com}
+}
+
 Other contributors:
 \itemize{
   \item RStudio [copyright holder]
