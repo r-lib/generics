@@ -9,7 +9,26 @@
 #' default methods call the base versions.
 #'
 #' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#'
+#' \subsection{`intersect()`}{
+#'     \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#' }
+#'
+#' \subsection{`union()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+#' }
+#'
+#' \subsection{`setdiff()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+#' }
+#'
+#' \subsection{`setequal()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+#' }
+#'
+#' \subsection{`is.element()`}{
+#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
+#' }
 #'
 #' @param x,y Vectors to combine.
 #' @param el,set Element and set to compare.
@@ -41,7 +60,7 @@ setdiff <- function(x, y, ...) UseMethod("setdiff")
 setequal <- function(x, y, ...) UseMethod("setequal")
 #' @rdname setops
 #' @export
-is.element <- function(el, set, ...) UseMethod("setequal")
+is.element <- function(el, set, ...) UseMethod("is.element")
 
 #' @export
 intersect.default <- function(x, y, ...) base::intersect(x, y, ...)
