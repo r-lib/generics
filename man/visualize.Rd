@@ -4,10 +4,10 @@
 \alias{visualize}
 \title{Visualize a data set or object.}
 \usage{
-visualize(data, ...)
+visualize(x, ...)
 }
 \arguments{
-\item{data}{A data frame or other object.}
+\item{x}{A data frame or other object.}
 
 \item{...}{Other arguments passed to methods}
 }
