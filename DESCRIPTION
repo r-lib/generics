@@ -20,6 +20,7 @@ Depends:
 Suggests: 
     covr,
     pkgload,
-    testthat
+    testthat,
+    tibble
 Imports: 
     methods
