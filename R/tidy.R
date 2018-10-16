@@ -5,7 +5,7 @@
 #' @return A [tibble::tibble()] with information about model components.
 #'
 #' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("tidy")}
+#' \Sexpr[stage=render,results=rd]{generics:::methods_rd("tidy")}
 #'
 #' @export
 tidy <- function(x, ...) {

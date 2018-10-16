@@ -17,6 +17,6 @@ a set of predictors (\code{x}) and outcome(s) (\code{y}).
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("fit_xy")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("fit_xy")}
 }
 

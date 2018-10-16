@@ -16,6 +16,6 @@ Generate values based on inputs
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("generate")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("generate")}
 }
 

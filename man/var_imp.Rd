@@ -16,6 +16,6 @@ A generic method for calculating variable importance for model objects.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("var_imp")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("var_imp")}
 }
 

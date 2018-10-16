@@ -22,6 +22,6 @@ fitted model.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("interpolate")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("interpolate")}
 }
 

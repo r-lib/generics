@@ -9,11 +9,11 @@
 #' @section Methods:
 #'
 #' \subsection{`as.factor()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("as.factor")}
 #' }
 #'
 #' \subsection{`as.ordered()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("as.ordered")}
 #' }
 #'
 #'
@@ -56,7 +56,7 @@ as.ordered.default <- function(x, ...) base::as.ordered(x)
 #' types. The default method call the base version.
 #'
 #' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.difftime")}
+#' \Sexpr[stage=render,results=rd]{generics:::methods_rd("as.difftime")}
 #'
 #' @param tim A vector specifying a time interval.
 #' @param format A single character specifying the format of `tim` when it is

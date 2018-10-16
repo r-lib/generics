@@ -8,7 +8,7 @@
 #' @return Markup output suitable for rendering the equation.
 #'
 #' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("equation")}
+#' \Sexpr[stage=render,results=rd]{generics:::methods_rd("equation")}
 #'
 #' @export
 equation <- function(object, ...) {

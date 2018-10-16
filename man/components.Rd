@@ -25,6 +25,6 @@ to extract these components in a tidy data format.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("components")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("components")}
 }
 
