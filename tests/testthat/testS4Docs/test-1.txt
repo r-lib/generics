@@ -1,0 +1,6 @@
+See the following help topics for more details about individual methods:
+
+\code{testS4Docs}
+\itemize{
+\item \code{\link[testS4Docs]{multi_method}}: \code{ANY,ANY}, \code{numeric,ANY}, \code{numeric,integer}
+}

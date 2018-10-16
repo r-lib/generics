@@ -1,0 +1,7 @@
+See the following help topics for more details about individual methods:
+
+\code{testMultiMethod}
+\itemize{
+\item \code{\link[testMultiMethod]{multi-method-2}}: \code{default}
+\item \code{\link[testMultiMethod]{multi-method-3}}: \code{data.frame}
+}

@@ -1,0 +1,6 @@
+See the following help topics for more details about individual methods:
+
+\code{testSameRd}
+\itemize{
+\item \code{\link[testSameRd]{same_rd_name-2}}: \code{data.frame}, \code{default}
+}
