@@ -69,12 +69,6 @@ provide a method for the S3 `fit()` method, you’d using the following
 #' @importFrom generics explain
 #' @export
 generics::explain
-#> function (x, ...) 
-#> {
-#>     UseMethod("explain")
-#> }
-#> <bytecode: 0x7faffdb7e0c8>
-#> <environment: namespace:generics>
 ```
 
 As an example, the [recipes](https://github.com/tidymodels/recipes)
