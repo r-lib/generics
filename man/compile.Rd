@@ -16,6 +16,6 @@ Finalizes or completes an object.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("compile")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("compile")}
 }
 

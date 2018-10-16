@@ -11,23 +11,23 @@
 #' @section Methods:
 #'
 #' \subsection{`intersect()`}{
-#'     \Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+#'     \Sexpr[stage=render,results=rd]{generics:::methods_rd("intersect")}
 #' }
 #'
 #' \subsection{`union()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("union")}
 #' }
 #'
 #' \subsection{`setdiff()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("setdiff")}
 #' }
 #'
 #' \subsection{`setequal()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("setequal")}
 #' }
 #'
 #' \subsection{`is.element()`}{
-#'    \Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
+#'    \Sexpr[stage=render,results=rd]{generics:::methods_rd("is.element")}
 #' }
 #'
 #' @param x,y Vectors to combine.

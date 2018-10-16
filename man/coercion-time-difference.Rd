@@ -35,7 +35,7 @@ types. The default method call the base version.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.difftime")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("as.difftime")}
 }
 
 \examples{

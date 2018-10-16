@@ -16,6 +16,6 @@ Visualize a data set or object.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("visualize")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("visualize")}
 }
 

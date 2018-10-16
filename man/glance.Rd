@@ -21,6 +21,6 @@ glance methods always return either a one-row data frame (except on
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("glance")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("glance")}
 }
 

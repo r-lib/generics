@@ -46,23 +46,23 @@ default methods call the base versions.
 
 
 \subsection{\code{intersect()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("intersect")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("intersect")}
 }
 
 \subsection{\code{union()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("union")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("union")}
 }
 
 \subsection{\code{setdiff()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("setdiff")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("setdiff")}
 }
 
 \subsection{\code{setequal()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("setequal")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("setequal")}
 }
 
 \subsection{\code{is.element()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("is.element")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("is.element")}
 }
 }
 

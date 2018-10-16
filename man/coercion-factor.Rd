@@ -31,11 +31,11 @@ default methods call the base versions.
 
 
 \subsection{\code{as.factor()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.factor")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("as.factor")}
 }
 
 \subsection{\code{as.ordered()}}{
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("as.ordered")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("as.ordered")}
 }
 }
 

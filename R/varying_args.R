@@ -1,7 +1,7 @@
-#' Find any arguments that are not fully specified. 
+#' Find any arguments that are not fully specified.
 #'
 #' @section Methods:
-#' \Sexpr[stage=render,results=Rd]{generics:::methods_rd("varying_args")}
+#' \Sexpr[stage=render,results=rd]{generics:::methods_rd("varying_args")}
 #'
 #' @inheritParams compile
 #' @export

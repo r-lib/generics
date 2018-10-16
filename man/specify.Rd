@@ -16,6 +16,6 @@ Specify variables or other quantities.
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("specify")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("specify")}
 }
 

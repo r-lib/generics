@@ -23,6 +23,6 @@ Augment data with information from an object
 }
 \section{Methods}{
 
-\Sexpr[stage=render,results=Rd]{generics:::methods_rd("augment")}
+\Sexpr[stage=render,results=rd]{generics:::methods_rd("augment")}
 }
 

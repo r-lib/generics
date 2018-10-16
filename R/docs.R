@@ -111,7 +111,13 @@ help_path <- function(x, package) {
 
 locate_help_doc <- function(x, package) {
   help <- if (requireNamespace("pkgload", quietly = TRUE)) {
-    get("shim_help", asNamespace("pkgload"))
+    shim_help <- get("shim_help", asNamespace("pkgload"))
+    function(x, package = NULL) {
+      tryCatch(
+        expr = shim_help(x, (package)),
+        error = function(e) character()
+      )
+    }
   } else {
     utils::help
   }
