@@ -16,11 +16,16 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 
 ## Installation
 
-To install generics, use:
+To install `generics` from CRAN, use:
+
+```{r, eval = FALSE}
+install.packages("generics")
+```
+
+To install the development version, use:
 
 ```{r, eval = FALSE}
 install.packages("devtools")
-# for devel version
 devtools::install_github("r-lib/generics")
 ```
 
@@ -36,7 +41,7 @@ fit
 tidy
 ```
 
-To use `generics` with your package, we recommend that you import and re-export the generic(s) of interest. For example, if you want to provide a method for the  S3 `fit()` method, you'd using the following the `roxygen2` code:
+To use `generics` with your package, we recommend that you import and re-export the generic(s) of interest. For example, if you want to provide a method for the  S3 `fit()` method, you'd using the following `roxygen2` code:
 
 ``` {r}
 #' @importFrom generics explain
@@ -48,4 +53,4 @@ As an example, the [recipes](https://github.com/tidymodels/recipes) package defi
 
 ## Documentation
 
-When searching for help on a method that is exported from `generics` by one or more packages, using `?method` will show entries for all exported methods. If the version from `generics is selected, the Methods section dynamically lists all specific methods exported by any loaded packages. 
+When searching for help on a method that is exported from `generics` by one or more packages, using `?method` will show entries for all exported methods. If the version from `generics` is selected, the Methods section dynamically lists all specific methods exported by any loaded packages. 
