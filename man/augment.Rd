@@ -4,14 +4,11 @@
 \alias{augment}
 \title{Augment data with information from an object}
 \usage{
-augment(x, data, ...)
+augment(x, ...)
 }
 \arguments{
 \item{x}{Model object or other R object with information to append to
 observations.}
-
-\item{data}{A \code{\link[=data.frame]{data.frame()}} or \code{\link[tibble:tibble]{tibble::tibble()}} containing the original
-data that was used to produce the object \code{x}.}
 
 \item{...}{Addition arguments to \code{augment} method.}
 }
