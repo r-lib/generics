@@ -38,3 +38,5 @@ rsconnect/
 .Rproj.user
 
 .DS_Store
+revdep/checks.noindex/
+revdep/library.noindex/
