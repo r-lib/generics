@@ -1,5 +1,5 @@
 Package: generics
-Version: 0.0.1
+Version: 0.0.2
 Title: Common S3 Generics not Provided by Base R Methods Related to Model Fitting
 Description: In order to reduce potential package dependencies and conflicts, 
     generics provides a number of commonly used S3 generics.
