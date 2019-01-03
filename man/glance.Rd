@@ -12,7 +12,7 @@ glance(x, ...)
 \item{...}{other arguments passed to methods}
 }
 \description{
-#' Construct a single row summary "glance" of a model, fit, or other
+Construct a single row summary "glance" of a model, fit, or other
 object
 }
 \details{
