@@ -1,6 +1,6 @@
 #' Glance at an object
 #'
-#'#' Construct a single row summary "glance" of a model, fit, or other
+#' Construct a single row summary "glance" of a model, fit, or other
 #' object
 #'
 #' glance methods always return either a one-row data frame (except on
