@@ -29,7 +29,7 @@ to have access to the generic method (instead of depending on
 Useful links:
 \itemize{
   \item \url{https://github.com/r-lib/generics}
-  \item Report bugs at \url{https://github.com/r-lib/generics}
+  \item Report bugs at \url{https://github.com/r-lib/generics/issues}
 }
 
 }
