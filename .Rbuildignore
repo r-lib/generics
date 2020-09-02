@@ -7,3 +7,4 @@ generics.Rproj
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.travis\.yml$
+^LICENSE\.md$
