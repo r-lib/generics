@@ -29,16 +29,16 @@ to have access to the generic method (instead of depending on
 Useful links:
 \itemize{
   \item \url{https://github.com/r-lib/generics}
-  \item Report bugs at \url{https://github.com/r-lib/generics}
+  \item Report bugs at \url{https://github.com/r-lib/generics/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Max Kuhn \email{max@rstudio.com}
+\strong{Maintainer}: Hadley Wickham \email{hadley@rstudio.com}
 
 Authors:
 \itemize{
-  \item Hadley Wickham \email{hadley@rstudio.com}
+  \item Max Kuhn \email{max@rstudio.com}
   \item Davis Vaughan \email{davis@rstudio.com}
 }
 
