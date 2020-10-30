@@ -1,11 +1,12 @@
 
 # generics
 
-[![Build
-Status](https://travis-ci.org/r-lib/generics.svg?branch=master)](https://travis-ci.org/r-lib/generics)
-[![Coverage
-status](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://codecov.io/github/r-lib/generics?branch=master)
-![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/generics/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://codecov.io/gh/r-lib/generics?branch=master)
+<!-- badges: end -->
 
 `generics` is designed to help package authors reduce dependencies by
 providing a set of generic methods that can be imported. For example, if
@@ -40,15 +41,15 @@ library(generics)
 #> Attaching package: 'generics'
 #> The following objects are masked from 'package:base':
 #> 
-#>     as.difftime, as.factor, as.ordered, intersect, is.element,
-#>     setdiff, setequal, union
+#>     as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+#>     setequal, union
 
 fit
 #> function (object, ...) 
 #> {
 #>     UseMethod("fit")
 #> }
-#> <bytecode: 0x7fafff33a2e0>
+#> <bytecode: 0x7ff1d59e2b20>
 #> <environment: namespace:generics>
 
 tidy
@@ -56,7 +57,7 @@ tidy
 #> {
 #>     UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fafff3f73b8>
+#> <bytecode: 0x7ff1d6df4318>
 #> <environment: namespace:generics>
 ```
 
