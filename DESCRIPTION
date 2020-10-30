@@ -21,7 +21,7 @@ Description: In order to reduce potential package dependencies
     and conflicts, generics provides a number of commonly used S3
     generics.
 License: MIT + file LICENSE
-URL: https://github.com/r-lib/generics
+URL: https://generics.r-lib.org, https://github.com/r-lib/generics
 BugReports: https://github.com/r-lib/generics/issues
 Depends: 
     R (>= 3.1)

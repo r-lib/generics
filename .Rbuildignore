@@ -9,3 +9,4 @@ generics.Rproj
 ^\.travis\.yml$
 ^LICENSE\.md$
 ^\.github$
+^pkgdown$
