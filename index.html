@@ -104,19 +104,17 @@
 <span class="co">#&gt;     setequal, union</span>
 
 <span class="va">fit</span>
-<span class="co">#&gt; function (object, ...) </span>
-<span class="co">#&gt; {</span>
-<span class="co">#&gt;     UseMethod("fit")</span>
+<span class="co">#&gt; function(object, ...) {</span>
+<span class="co">#&gt;   UseMethod("fit")</span>
 <span class="co">#&gt; }</span>
-<span class="co">#&gt; &lt;bytecode: 0x7ff1d59e2b20&gt;</span>
+<span class="co">#&gt; &lt;bytecode: 0x7fca8cc62a30&gt;</span>
 <span class="co">#&gt; &lt;environment: namespace:generics&gt;</span>
 
 <span class="va">tidy</span>
-<span class="co">#&gt; function (x, ...) </span>
-<span class="co">#&gt; {</span>
-<span class="co">#&gt;     UseMethod("tidy")</span>
+<span class="co">#&gt; function(x, ...) {</span>
+<span class="co">#&gt;   UseMethod("tidy")</span>
 <span class="co">#&gt; }</span>
-<span class="co">#&gt; &lt;bytecode: 0x7ff1d6df4318&gt;</span>
+<span class="co">#&gt; &lt;bytecode: 0x7fca6c986cf8&gt;</span>
 <span class="co">#&gt; &lt;environment: namespace:generics&gt;</span></pre></div>
 <p>To use <code>generics</code> with your package, we recommend that you import and re-export the generic(s) of interest. For example, if you want to provide a method for the S3 <code><a href="reference/explain.html">explain()</a></code> method, you’d using the following <code>roxygen2</code> code:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
