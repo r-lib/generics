@@ -11,3 +11,4 @@ generics.Rproj
 ^\.github$
 ^pkgdown$
 ^cran-comments\.md$
+^CRAN-RELEASE$
