@@ -1,5 +1,3 @@
-context("test-special-cases")
-
 test_that("no methods case returns default output", {
   expect_equal(
     methods_rd("methods_rd"),
