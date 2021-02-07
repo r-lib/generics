@@ -10,10 +10,6 @@ methods_find <- function(x) {
   info$method <- rownames(info)
   rownames(info) <- NULL
 
-  if (getRversion() < "3.2") {
-    info$isS4 <- grepl("-method$", info$method)
-  }
-
   # Simply class and source
   generic_esc <- gsub("\\.", "\\\\.", x)
   info$class <- gsub(paste0("^", generic_esc, "[.,]"), "", info$method)
