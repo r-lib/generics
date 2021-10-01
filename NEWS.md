@@ -1,5 +1,7 @@
 # generics (development version)
 
+* New `tune_args()` generic.
+
 # generics 0.1.0
 
 * Maintainer changed to Hadley Wickham.
