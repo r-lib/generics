@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Changelog • generics</title>
+<title>Determine arguments tagged for tuning — tune_args • generics</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,10 @@
 
 
 
-<meta property="og:title" content="Changelog" />
+<meta property="og:title" content="Determine arguments tagged for tuning — tune_args" />
+<meta property="og:description" content="tune_args() takes an object such as a model specification or a recipe and
+returns a tibble of information on all possible tunable arguments and
+whether or not they are actually tunable." />
 
 
 
@@ -58,7 +61,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-news">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -110,48 +113,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1 data-toc-skip>Changelog <small></small></h1>
-      <small>Source: <a href='https://github.com/r-lib/generics/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
+    <h1>Determine arguments tagged for tuning</h1>
+    <small class="dont-index">Source: <a href='https://github.com/r-lib/generics/blob/master/R/tune_args.R'><code>R/tune_args.R</code></a></small>
+    <div class="hidden name"><code>tune_args.Rd</code></div>
     </div>
 
-    <div id="generics-development-version" class="section level1">
-<h1 class="page-header" data-toc-text="development version">
-<a href="#generics-development-version" class="anchor"></a>generics (development version)<small> Unreleased </small>
-</h1>
-<ul>
-<li>New <code><a href="../reference/tune_args.html">tune_args()</a></code> generic.</li>
-</ul>
-</div>
-    <div id="generics-010" class="section level1">
-<h1 class="page-header" data-toc-text="0.1.0">
-<a href="#generics-010" class="anchor"></a>generics 0.1.0<small> 2020-10-31 </small>
-</h1>
-<ul>
-<li><p>Maintainer changed to Hadley Wickham.</p></li>
-<li><p>Re-licensed with MIT license.</p></li>
-<li><p>New <code><a href="../reference/min_grid.html">min_grid()</a></code>, <code><a href="../reference/required_pkgs.html">required_pkgs()</a></code>, and <code><a href="../reference/tunable.html">tunable()</a></code> generics.</p></li>
-</ul>
-</div>
-    <div id="generics-002" class="section level1">
-<h1 class="page-header" data-toc-text="0.0.2">
-<a href="#generics-002" class="anchor"></a><small> 2018-11-29 </small><code>generics</code> 0.0.2</h1>
-<ul>
-<li>Removed the <code>data</code> argument to <code>augment</code> to resolve issues with <code>broom</code>.</li>
-</ul>
-</div>
-    <div id="generics-001" class="section level1">
-<h1 class="page-header" data-toc-text="0.0.1">
-<a href="#generics-001" class="anchor"></a><small> 2018-10-26 </small><code>generics</code> 0.0.1</h1>
-<p>First CRAN version</p>
-</div>
-  </div>
+    <div class="ref-description">
+    <p><code>tune_args()</code> takes an object such as a model specification or a recipe and
+returns a tibble of information on all possible tunable arguments and
+whether or not they are actually tunable.</p>
+    </div>
 
+    <pre class="usage"><span class='fu'>tune_args</span><span class='op'>(</span><span class='va'>object</span>, <span class='va'>...</span><span class='op'>)</span></pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>object</th>
+      <td><p>A <code>model_spec</code>, <code>recipe</code>, <code>workflow</code>, or other object.</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Other arguments passed to methods.</p></td>
+    </tr>
+    </table>
+
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>A tibble with columns for the parameter name (<code>name</code>), whether it
+contains <em>any</em> tunable value (<code>tune</code>), the <code>id</code> for the parameter (<code>id</code>),
+and the information on where the parameter was located (<code>source</code>).</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The <code>source</code> column is determined differently for a
+<code>model_spec</code> or a <code>recipe</code> (with additional detail on the type).</p>
+<p>The <code>id</code> field has any identifier that was passed from <code>tune::tune()</code> (e.g.
+<code>tune("some note")</code>). If no additional detail was used in that function,
+the <code>id</code> field reverts to the name of the parameters.</p>
+    <h2 class="hasAnchor" id="methods"><a class="anchor" href="#methods"></a>Methods</h2>
+
+    
+
+<p>No methods found in currently loaded packages.</p>
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
-
 </div>
 
 
