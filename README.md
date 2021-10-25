@@ -5,7 +5,7 @@
 
 [![R-CMD-check](https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/generics/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://codecov.io/gh/r-lib/generics?branch=master)
+coverage](https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg)](https://app.codecov.io/gh/r-lib/generics?branch=master)
 <!-- badges: end -->
 
 `generics` is designed to help package authors reduce dependencies by
@@ -45,17 +45,19 @@ library(generics)
 #>     setequal, union
 
 fit
-#> function(object, ...) {
-#>   UseMethod("fit")
+#> function (object, ...) 
+#> {
+#>     UseMethod("fit")
 #> }
-#> <bytecode: 0x7fca8cc62a30>
+#> <bytecode: 0x7fbb9cc8b218>
 #> <environment: namespace:generics>
 
 tidy
-#> function(x, ...) {
-#>   UseMethod("tidy")
+#> function (x, ...) 
+#> {
+#>     UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fca6c986cf8>
+#> <bytecode: 0x7fbb9cd0a830>
 #> <environment: namespace:generics>
 ```
 
