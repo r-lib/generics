@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">generics</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -104,17 +104,19 @@
 <span class="co">#&gt;     setequal, union</span>
 
 <span class="va">fit</span>
-<span class="co">#&gt; function(object, ...) {</span>
-<span class="co">#&gt;   UseMethod("fit")</span>
+<span class="co">#&gt; function (object, ...) </span>
+<span class="co">#&gt; {</span>
+<span class="co">#&gt;     UseMethod("fit")</span>
 <span class="co">#&gt; }</span>
-<span class="co">#&gt; &lt;bytecode: 0x7fca8cc62a30&gt;</span>
+<span class="co">#&gt; &lt;bytecode: 0x7fbb9cc8b218&gt;</span>
 <span class="co">#&gt; &lt;environment: namespace:generics&gt;</span>
 
 <span class="va">tidy</span>
-<span class="co">#&gt; function(x, ...) {</span>
-<span class="co">#&gt;   UseMethod("tidy")</span>
+<span class="co">#&gt; function (x, ...) </span>
+<span class="co">#&gt; {</span>
+<span class="co">#&gt;     UseMethod("tidy")</span>
 <span class="co">#&gt; }</span>
-<span class="co">#&gt; &lt;bytecode: 0x7fca6c986cf8&gt;</span>
+<span class="co">#&gt; &lt;bytecode: 0x7fbb9cd0a830&gt;</span>
 <span class="co">#&gt; &lt;environment: namespace:generics&gt;</span></code></pre></div>
 <p>To use <code>generics</code> with your package, we recommend that you import and re-export the generic(s) of interest. For example, if you want to provide a method for the S3 <code><a href="reference/explain.html">explain()</a></code> method, you’d using the following <code>roxygen2</code> code:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
@@ -165,7 +167,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/r-lib/generics/actions"><img src="https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://codecov.io/gh/r-lib/generics?branch=master"><img src="https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://app.codecov.io/gh/r-lib/generics?branch=master"><img src="https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 </div>
