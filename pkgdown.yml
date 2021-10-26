@@ -2,7 +2,7 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-10-25T22:31Z
+last_built: 2021-10-26T00:56Z
 urls:
   reference: https://generics.r-lib.org/reference
   article: https://generics.r-lib.org/articles
