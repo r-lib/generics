@@ -10,7 +10,7 @@
 #'  _default_ method for generating a corresponding parameter object, the
 #'  `source` of the parameter (e.g. "recipe", etc.), and the `component` within
 #'  the source. For the `component` column, a little more specificity is given
-#'  about the location of the parameter (e.g. "step_normalize" or recipes or
+#'  about the location of the parameter (e.g. "step_normalize" for recipes or
 #'  "boost_tree" for models). The `component_id` column contains the unique step
 #'  `id` field or, for models, a logical for whether the model specification
 #'  argument was a main parameter or one associated with the engine.
