@@ -23,6 +23,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -35,18 +37,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">generics</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.1.9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -56,7 +52,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/r-lib/generics/">
+  <a href="https://github.com/r-lib/generics/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -73,29 +69,29 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="generics" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#generics" class="anchor"></a>generics</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="generics">generics<a class="anchor" aria-label="anchor" href="#generics"></a>
+</h1></div>
 <!-- badges: start -->
 
 <p><code>generics</code> is designed to help package authors reduce dependencies by providing a set of generic methods that can be imported. For example, if a package author wanted to include a <code>tidy</code> method for their object, they would have to import the <code>broom</code> package to do so. This would work but would potentially increase the number of package dependencies required to install and/or test the package.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>To install <code>generics</code> from CRAN, use:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"generics"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"generics"</span><span class="op">)</span></code></pre></div>
 <p>To install the development version, use:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"r-lib/generics"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
 <p><code>generics</code> is a simple, lightweight package that contains S3 generics to be used by other packages. Some examples are:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://generics.r-lib.org">generics</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://generics.r-lib.org">generics</a></span><span class="op">)</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; Attaching package: 'generics'</span>
 <span class="co">#&gt; The following objects are masked from 'package:base':</span>
@@ -123,11 +119,11 @@
 <code class="sourceCode R"><span class="co">#' @importFrom generics explain</span>
 <span class="co">#' @export</span>
 <span class="fu">generics</span><span class="fu">::</span><span class="va"><a href="reference/explain.html">explain</a></span></code></pre></div>
-<p>As an example, the <a href="https://github.com/tidymodels/recipes">recipes</a> package defines a number of <code><a href="reference/tidy.html">tidy()</a></code> S3 methods by importing this package (whereas it previously depended on <code>broom</code>).</p>
+<p>As an example, the <a href="https://github.com/tidymodels/recipes" class="external-link">recipes</a> package defines a number of <code><a href="reference/tidy.html">tidy()</a></code> S3 methods by importing this package (whereas it previously depended on <code>broom</code>).</p>
 </div>
-<div id="documentation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#documentation" class="anchor"></a>Documentation</h2>
+<div class="section level2">
+<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h2>
 <p>When searching for help on a method that is exported from <code>generics</code> by one or more packages, using <code>?method</code> will show entries for all exported methods. If the version from <code>generics</code> is selected, the Methods section dynamically lists all specific methods exported by any loaded packages.</p>
 </div>
 </div>
@@ -135,51 +131,60 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=generics">https://​cloud.r-project.org/​package=generics</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/r-lib/generics/">https://​github.com/​r-lib/​generics/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/r-lib/generics/issues">https://​github.com/​r-lib/​generics/​issues</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>
-<a href="http://hadley.nz">Hadley Wickham</a> <br><small class="roles"> Author, maintainer </small>  </li>
-<li>Max Kuhn <br><small class="roles"> Author </small>  </li>
-<li>Davis Vaughan <br><small class="roles"> Author </small>  </li>
-<li><a href="authors.html">All authors...</a></li>
+<li><a href="https://cloud.r-project.org/package=generics" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/r-lib/generics/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/r-lib/generics/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/r-lib/generics/actions"><img src="https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://app.codecov.io/gh/r-lib/generics?branch=master"><img src="https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing generics</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Hadley Wickham <br><small class="roles"> Author, maintainer </small>  </li>
+<li>Max Kuhn <br><small class="roles"> Author </small>  </li>
+<li>Davis Vaughan <br><small class="roles"> Author </small>  </li>
+<li><a href="authors.html">More about authors...</a></li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/r-lib/generics/actions" class="external-link"><img src="https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://app.codecov.io/gh/r-lib/generics?branch=master" class="external-link"><img src="https://codecov.io/gh/r-lib/generics/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+</ul>
+</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="http://hadley.nz">Hadley Wickham</a>, Max Kuhn, Davis Vaughan.</p>
+  <p></p>
+<p>Developed by Hadley Wickham, Max Kuhn, Davis Vaughan.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
@@ -187,6 +192,8 @@
 
   
 
+
+  
 
   </body>
 </html>
