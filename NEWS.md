@@ -2,7 +2,7 @@
 
 # generics 0.1.2
 
-* New `forecast()` and `accuracy` generics.
+* New `forecast()` and `accuracy()` generics.
 
 # generics 0.1.1
 
