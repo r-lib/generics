@@ -8,7 +8,6 @@
 #' @section Methods:
 #' \Sexpr[stage=render,results=rd]{generics:::methods_rd("learn")}
 #'
-#' @inheritParams compile
 #' @export
 learn <- function(x, ...) {
   UseMethod("learn")
