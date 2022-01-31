@@ -10,7 +10,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/generics/actions)
-[![Codecov test coverage](https://codecov.io/gh/r-lib/generics/branch/main/graph/badge.svg)](https://codecov.io/gh/r-lib/generics?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/r-lib/generics/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/generics?branch=main)
 <!-- badges: end -->
 
 `generics` is designed to help package authors reduce dependencies by providing a set of generic methods that can be imported. For example, if a package author wanted to include a `tidy` method for their object, they would have to import the `broom` package to do so. This would work but would potentially increase the number of package dependencies required to install and/or test the package. 

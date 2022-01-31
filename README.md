@@ -5,7 +5,7 @@
 
 [![R-CMD-check](https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/generics/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/r-lib/generics/branch/main/graph/badge.svg)](https://codecov.io/gh/r-lib/generics?branch=main)
+coverage](https://codecov.io/gh/r-lib/generics/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/generics?branch=main)
 <!-- badges: end -->
 
 `generics` is designed to help package authors reduce dependencies by
@@ -49,7 +49,7 @@ fit
 #> {
 #>     UseMethod("fit")
 #> }
-#> <bytecode: 0x7fec845fcdc8>
+#> <bytecode: 0x7fe9a45948b0>
 #> <environment: namespace:generics>
 
 tidy
@@ -57,7 +57,7 @@ tidy
 #> {
 #>     UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fecb50b98b8>
+#> <bytecode: 0x7fe9b3440760>
 #> <environment: namespace:generics>
 ```
 
