@@ -1,4 +1,4 @@
-# generics (development version)
+# generics 0.1.2
 
 # generics 0.1.2
 
