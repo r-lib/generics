@@ -1,3 +1,5 @@
+# generics (development version)
+
 # generics 0.1.2
 
 * New `forecast()` and `accuracy()` generics.
