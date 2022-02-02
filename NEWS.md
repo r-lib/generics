@@ -1,7 +1,5 @@
 # generics 0.1.2
 
-# generics 0.1.2
-
 * New `forecast()` and `accuracy()` generics.
 
 # generics 0.1.1
@@ -23,5 +21,3 @@
 # `generics` 0.0.1
 
 First CRAN version
-
-
