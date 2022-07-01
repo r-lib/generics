@@ -1,9 +1,9 @@
-#' Show relative rankings of different items
+#' Compute relative rankings of a collection of objects
 #'
-#' The functions returns a summary that provides relative ranks of different
-#' items in a collection.
+#' `rank_results()` computes relative ranks of a collection of objects and
+#' returns a summary of the results.
 #'
-#' @param x An object that represents a collection of items.
+#' @param x A collection of objects
 #' @param ... Other arguments passed to methods
 #'
 #' @section Methods:

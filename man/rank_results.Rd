@@ -2,18 +2,18 @@
 % Please edit documentation in R/rank_results.R
 \name{rank_results}
 \alias{rank_results}
-\title{Show relative rankings of different items}
+\title{Compute relative rankings of a collection of objects}
 \usage{
 rank_results(x, ...)
 }
 \arguments{
-\item{x}{An object that represents a collection of items.}
+\item{x}{A collection of objects}
 
 \item{...}{Other arguments passed to methods}
 }
 \description{
-The functions returns a summary that provides relative ranks of different
-items in a collection.
+\code{rank_results()} computes relative ranks of a collection of objects and
+returns a summary of the results.
 }
 \section{Methods}{
 
