@@ -25,7 +25,7 @@ whether or not they are actually tunable.
 The \code{source} column is determined differently for a
 \code{model_spec} or a \code{recipe} (with additional detail on the type).
 
-The \code{id} field has any identifier that was passed from \code{\link[tune:tune]{tune::tune()}} (e.g.
+The \code{id} field has any identifier that was passed from \code{\link[tune:reexports]{tune::tune()}} (e.g.
 \code{tune("some note")}). If no additional detail was used in that function,
 the \code{id} field reverts to the name of the parameters.
 }
