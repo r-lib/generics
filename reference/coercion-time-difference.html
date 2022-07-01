@@ -55,28 +55,37 @@ existing objects.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">as.difftime</span><span class="op">(</span><span class="va">tim</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for default</span>
-<span class="fu">as.difftime</span><span class="op">(</span><span class="va">tim</span>, format <span class="op">=</span> <span class="st">"%X"</span>, units <span class="op">=</span> <span class="st">"auto"</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">as.difftime</span><span class="op">(</span><span class="va">tim</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for default</span></span>
+<span><span class="fu">as.difftime</span><span class="op">(</span><span class="va">tim</span>, format <span class="op">=</span> <span class="st">"%X"</span>, units <span class="op">=</span> <span class="st">"auto"</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>tim</dt>
 <dd><p>A vector specifying a time interval.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Other arguments passed on to methods.</p></dd>
+
+
 <dt>format</dt>
 <dd><p>A single character specifying the format of <code>tim</code> when it is
 a character. The default is a locale-specific time format.</p></dd>
+
+
 <dt>units</dt>
 <dd><p>A single character specifying units in which the results are
 desired. Required if <code>tim</code> is a numeric.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A <code>difftime</code> object with an attribute indicating the units.</p>
+    
+
+<p>A <code>difftime</code> object with an attribute indicating the units.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -94,19 +103,19 @@ types. The default method call the base version.</p>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">as.difftime</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, units <span class="op">=</span> <span class="st">"secs"</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">as.difftime</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, units <span class="op">=</span> <span class="st">"secs"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Time differences in secs</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1 2 3 4 5</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu">as.difftime</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"01:55:22"</span>, <span class="st">"01:55:25"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">as.difftime</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"01:55:22"</span>, <span class="st">"01:55:25"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Time differences in hours</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.922778 1.923611</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu">as.difftime</span><span class="op">(</span><span class="st">"01"</span>, format <span class="op">=</span> <span class="st">"%H"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">as.difftime</span><span class="op">(</span><span class="st">"01"</span>, format <span class="op">=</span> <span class="st">"%H"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Time difference of 1 hours</span>
-<span class="r-in"><span class="fu">as.difftime</span><span class="op">(</span><span class="st">"01"</span>, format <span class="op">=</span> <span class="st">"%H"</span>, units <span class="op">=</span> <span class="st">"secs"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">as.difftime</span><span class="op">(</span><span class="st">"01"</span>, format <span class="op">=</span> <span class="st">"%H"</span>, units <span class="op">=</span> <span class="st">"secs"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Time difference of 3600 secs</span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -121,7 +130,7 @@ types. The default method call the base version.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>
