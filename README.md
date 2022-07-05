@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/r-lib/generics/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/generics/actions)
+[![R-CMD-check](https://github.com/r-lib/generics/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-lib/generics/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/r-lib/generics/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/generics?branch=main)
 <!-- badges: end -->
@@ -45,19 +45,17 @@ library(generics)
 #>     setequal, union
 
 fit
-#> function (object, ...) 
-#> {
-#>     UseMethod("fit")
+#> function(object, ...) {
+#>   UseMethod("fit")
 #> }
-#> <bytecode: 0x7fe9a45948b0>
+#> <bytecode: 0x7fe84f9e2620>
 #> <environment: namespace:generics>
 
 tidy
-#> function (x, ...) 
-#> {
-#>     UseMethod("tidy")
+#> function(x, ...) {
+#>   UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fe9b3440760>
+#> <bytecode: 0x7fe85854b2d8>
 #> <environment: namespace:generics>
 ```
 
