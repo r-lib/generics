@@ -1,4 +1,4 @@
-# generics (development version)
+# generics 0.1.3
 
 * New `rank_results()` generic.
 
