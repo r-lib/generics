@@ -11,7 +11,7 @@
 #' The `source` column is determined differently for a
 #' `model_spec` or a `recipe` (with additional detail on the type).
 #'
-#' The `id` field has any identifier that was passed from [tune::tune()] (e.g.
+#' The `id` field has any identifier that was passed from `tune::tune()` (e.g.
 #' `tune("some note")`). If no additional detail was used in that function,
 #' the `id` field reverts to the name of the parameters.
 #'
