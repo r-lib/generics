@@ -1,5 +1,7 @@
 # generics (development version)
 
+* New `rank_results()` generic.
+
 # generics 0.1.2
 
 * New `forecast()` and `accuracy()` generics.
