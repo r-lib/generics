@@ -35,17 +35,17 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Hadley Wickham \email{hadley@rstudio.com}
+\strong{Maintainer}: Hadley Wickham \email{hadley@posit.co}
 
 Authors:
 \itemize{
-  \item Max Kuhn \email{max@rstudio.com}
-  \item Davis Vaughan \email{davis@rstudio.com}
+  \item Max Kuhn \email{max@posit.co}
+  \item Davis Vaughan \email{davis@posit.co}
 }
 
 Other contributors:
 \itemize{
-  \item RStudio [copyright holder]
+  \item Posit Software, PBC [copyright holder, funder]
 }
 
 }

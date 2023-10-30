@@ -26,8 +26,8 @@ install.packages("generics")
 To install the development version, use:
 
 ```{r, eval = FALSE}
-install.packages("devtools")
-devtools::install_github("r-lib/generics")
+# install.packages("pak")
+pak::pak("r-lib/generics")
 ```
 
 ## Usage

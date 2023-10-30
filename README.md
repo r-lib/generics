@@ -26,8 +26,8 @@ install.packages("generics")
 To install the development version, use:
 
 ``` r
-install.packages("devtools")
-devtools::install_github("r-lib/generics")
+# install.packages("pak")
+pak::pak("r-lib/generics")
 ```
 
 ## Usage
@@ -45,17 +45,19 @@ library(generics)
 #>     setequal, union
 
 fit
-#> function(object, ...) {
-#>   UseMethod("fit")
+#> function (object, ...) 
+#> {
+#>     UseMethod("fit")
 #> }
-#> <bytecode: 0x7fe84f9e2620>
+#> <bytecode: 0x11c3908c0>
 #> <environment: namespace:generics>
 
 tidy
-#> function(x, ...) {
-#>   UseMethod("tidy")
+#> function (x, ...) 
+#> {
+#>     UseMethod("tidy")
 #> }
-#> <bytecode: 0x7fe85854b2d8>
+#> <bytecode: 0x11c3fe540>
 #> <environment: namespace:generics>
 ```
 
