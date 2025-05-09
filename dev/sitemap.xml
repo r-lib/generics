@@ -1,129 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://generics.r-lib.org/dev/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/index.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/accuracy.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/augment.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/calculate.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/coercion-factor.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/coercion-time-difference.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/compile.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/components.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/equation.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/estfun.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/evaluate.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/explain.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/explore.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/fit.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/fit_xy.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/forecast.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/generate.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/generics-package.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/glance.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/hypothesize.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/interpolate.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/learn.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/min_grid.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/prune.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/rank_results.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/refit.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/required_pkgs.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/setops.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/specify.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/tidy.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/train.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/tunable.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/tune_args.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/var_imp.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/varying_args.html</loc>
-  </url>
-  <url>
-    <loc>https://generics.r-lib.org/dev/reference/visualize.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://generics.r-lib.org/dev/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/LICENSE-text.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/LICENSE.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/authors.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/index.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/news/index.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/accuracy.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/augment.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/calculate.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/coercion-factor.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/coercion-time-difference.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/compile.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/components.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/equation.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/estfun.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/evaluate.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/explain.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/explore.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/fit.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/fit_xy.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/forecast.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/generate.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/generics-package.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/glance.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/hypothesize.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/index.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/interpolate.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/learn.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/min_grid.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/prune.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/rank_results.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/refit.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/required_pkgs.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/setops.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/specify.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/tidy.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/train.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/tunable.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/tune_args.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/var_imp.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/varying_args.html</loc></url>
+<url><loc>https://generics.r-lib.org/dev/reference/visualize.html</loc></url>
 </urlset>
+
