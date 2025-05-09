@@ -1,5 +1,7 @@
 # generics (development version)
 
+* Patch release for CRAN
+
 # generics 0.1.3
 
 * New `rank_results()` generic.
