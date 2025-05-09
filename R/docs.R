@@ -125,6 +125,7 @@ locate_help_doc <- function(x, package) {
   }
 }
 
+#' @export
 as.character.dev_topic <- function(x, ...) {
   sub("[.]Rd$", "", x$path)
 }
