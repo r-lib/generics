@@ -45,19 +45,17 @@ library(generics)
 #>     setequal, union
 
 fit
-#> function (object, ...) 
-#> {
-#>     UseMethod("fit")
+#> function(object, ...) {
+#>   UseMethod("fit")
 #> }
-#> <bytecode: 0x11c3908c0>
+#> <bytecode: 0x107df2b38>
 #> <environment: namespace:generics>
 
 tidy
-#> function (x, ...) 
-#> {
-#>     UseMethod("tidy")
+#> function(x, ...) {
+#>   UseMethod("tidy")
 #> }
-#> <bytecode: 0x11c3fe540>
+#> <bytecode: 0x107e583a8>
 #> <environment: namespace:generics>
 ```
 
